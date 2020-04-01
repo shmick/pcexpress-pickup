@@ -27,3 +27,107 @@ $ python check.py
 2020-04-14 15:00:00-04:00
 2020-04-14 17:00:00-04:00
 ```
+
+# Notes
+https://www.pcexpress.ca/bundle.js contains a list of all pcexpress pickup locations and variety of locatio metadata. 
+
+The store locations have been extracted to locations.json
+
+### location sample data
+```json
+[
+    {
+        "id": "1000",
+        "contactNumber": "4167033419",
+        "name": "Queen Street West",
+        "storeId": "1000",
+        "storeBannerId": "loblaw",
+        "locationType": "STORE",
+        "pickupType": "STORE",
+        "bufferTimeInHours": 2,
+        "partner": null,
+        "visible": true,
+        "isShoppable": true,
+        "geoPoint": {
+            "latitude": 43.647355,
+            "longitude": -79.401696
+        },
+        "address": {
+            "country": "Canada",
+            "region": "ON",
+            "town": "Toronto",
+            "line1": "585 Queen St W",
+            "line2": null,
+            "postalCode": "M5V 2B7",
+            "formattedAddress": "585 Queen St W Toronto, ON M5V 2B7"
+        },
+        "timeZone": "EST5EDT",
+        "features": []
+    },
+    {
+        "id": "1032",
+        "contactNumber": "9052941680",
+        "name": "Bullock Drive",
+        "storeId": "1032",
+        "storeBannerId": "loblaw",
+        "locationType": "STORE",
+        "pickupType": "STORE",
+        "bufferTimeInHours": 2,
+        "partner": null,
+        "visible": true,
+        "isShoppable": true,
+        "geoPoint": {
+            "latitude": 43.874193,
+            "longitude": -79.284753
+        },
+        "address": {
+            "country": "Canada",
+            "region": "Ontario",
+            "town": "Markham",
+            "line1": "200 Bullock Dr",
+            "line2": null,
+            "postalCode": "L3P 1W2",
+            "formattedAddress": "200 Bullock Dr Markham, Ontario L3P 1W2"
+        },
+        "timeZone": "EST5EDT",
+        "features": []
+    }
+]   
+```
+
+
+### Activate locations and store banners
+
+```json
+activeLocations: [
+                    "loblaw",
+                    "superstore",
+                    "nofrills",
+                    "fortinos",
+                    "independent",
+                    "zehrs",
+                    "independentcitymarket",
+                    "rass",
+                    "dominion",
+                    "provigo",
+                    "maxi",
+                    "valumart",
+                    "wholesaleclub"
+                ]
+```
+
+```                       
+rass: {key: "rass",label: "Atlantic SuperStore",value:!0,activeOn: "Sat, 01 Jan 2000 00:00:00 UTC"
+dominion: {key: "dominion",label: "Dominion Stores in Newfoundland and Labrador",value:!0,activeOn: "Sat, 01 Jan 2000 00:00:00 UTC"
+fortinos: {key: "fortinos",label: "Fortinos",value:!0,activeOn: "Sat, 01 Jan 2000 00:00:00 UTC"
+independent: {key: "independent",label: "Your Independent Grocer",value:!0,activeOn: "Sat, 01 Jan 2000 00:00:00 UTC"
+loblaw: {key: "loblaw",label: "Loblaws",value:!0,activeOn: "Sat, 01 Jan 2000 00:00:00 UTC"
+provigo: {key: "provigo",label: "Provigo",value:!0,activeOn: "Sat, 01 Jan 2000 00:00:00 UTC"
+superstore: {key: "superstore",label: "Real Canadian Superstore",value:!0,activeOn: "Sat, 01 Jan 2000 00:00:00 UTC"
+valumart: {key: "valumart",label: "Valu-mart",value:!0,activeOn: "Sat, 01 Jan 2000 00:00:00 UTC"
+zehrs: {key: "zehrs",label: "Zehrs",value:!0,activeOn: "Sat, 01 Jan 2000 00:00:00 UTC"
+maxi: {key: "maxi",label: "Maxi",value:!0,activeOn: "Tues, 05 June 2018 4:00:00 UTC"
+nofrills: {key: "nofrills",label: "No Frills",value:!0,activeOn: "Tues, 05 June 2018 4:00:00 UTC"
+independentcitymarket: {key: "independentcitymarket",label: "City Market",value:!0,activeOn: "Sat, 01 Jan 2000 00:00:00 UTC"
+wholesaleclub: {key: "wholesaleclub",label: "Wholesale Club",value:!0,activeOn: "Sat, 01 Jan 2000 00:00:00 UTC"
+```
