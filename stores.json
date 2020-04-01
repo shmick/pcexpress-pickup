@@ -3,135 +3,97 @@
         {
             "id": "bloor",
             "name": "Bloor Street Market",
-            "url": "http://www.bloorstreetmarket.ca",
-            "logo": null,
-            "activeOn": "Sat, 01 Jan 2000 00:00:00 UTC"
+            "url": "http://www.bloorstreetmarket.ca"
         },
         {
             "id": "box",
             "name": "Box",
-            "url": "http://www.boxfoodstores.ca",
-            "logo": null,
-            "activeOn": "Sat, 01 Jan 2000 00:00:00 UTC"
+            "url": "http://www.boxfoodstores.ca"
         },
         {
             "id": "independent",
             "name": "Your Independent Grocer",
-            "url": "https://www.yourindependentgrocer.ca/",
-            "logo": "./yig.svg",
-            "activeOn": "Sat, 01 Jan 2000 00:00:00 UTC"
+            "url": "https://www.yourindependentgrocer.ca"
         },
         {
             "id": "dominion",
             "name": "Dominion Stores in Newfoundland and Labrador",
-            "url": "http://www.newfoundlandgrocerystores.ca",
-            "logo": "./dominion.svg",
-            "activeOn": "Sat, 01 Jan 2000 00:00:00 UTC"
+            "url": "http://www.newfoundlandgrocerystores.ca"
         },
         {
             "id": "extra",
             "name": "Extra Foods",
-            "url": "http://www.extrafoods.ca",
-            "logo": null,
-            "activeOn": "Sat, 01 Jan 2000 00:00:00 UTC"
+            "url": "http://www.extrafoods.ca"
         },
         {
             "id": "fortinos",
             "name": "Fortinos",
-            "url": "https://www.fortinos.ca",
-            "logo": "./fortinos.svg",
-            "activeOn": "Sat, 01 Jan 2000 00:00:00 UTC"
+            "url": "https://www.fortinos.ca"
         },
         {
             "id": "loblaw",
             "name": "Loblaws",
-            "url": "https://www.loblaws.ca",
-            "logo": "./loblaws.svg",
-            "activeOn": "Sat, 01 Jan 2000 00:00:00 UTC"
+            "url": "https://www.loblaws.ca"
         },
         {
             "id": "loblawscity",
             "name": "Loblaws City Market",
-            "url": null,
-            "logo": null,
-            "activeOn": "Sat, 01 Jan 2000 00:00:00 UTC"
+            "url": null
         },
         {
             "id": "independentcitymarket",
             "name": "City Market",
-            "url": "https://www.independentcitymarket.ca",
-            "logo": "./citymarket.svg",
-            "activeOn": "Sat, 01 Jan 2000 00:00:00 UTC"
+            "url": "https://www.independentcitymarket.ca"
         },
         {
             "id": "provigo",
             "name": "Provigo",
-            "url": "https://www.provigo.ca",
-            "logo": "./provigo.svg",
-            "activeOn": "Sat, 01 Jan 2000 00:00:00 UTC"
+            "url": "https://www.provigo.ca"
         },
         {
             "id": "rass",
             "name": "Atlantic Superstore",
-            "url": "https://www.atlanticsuperstore.ca",
-            "logo": "./rass.svg",
-            "activeOn": "Sat, 01 Jan 2000 00:00:00 UTC"
+            "url": "https://www.atlanticsuperstore.ca"
         },
         {
             "id": "saveeasy",
             "name": "Save Easy",
-            "url": "http://www.saveeasy.ca",
-            "logo": null,
-            "activeOn": "Sat, 01 Jan 2000 00:00:00 UTC"
+            "url": "http://www.saveeasy.ca"
         },
         {
             "id": "superstore",
             "name": "Real Canadian Superstore",
-            "url": "https://www.superstore.ca",
-            "logo": "./superstore.svg",
-            "activeOn": "Sat, 01 Jan 2000 00:00:00 UTC"
+            "url": "https://www.superstore.ca"
         },
         {
             "id": "valumart",
             "name": "Valu-mart",
-            "url": "https://www.valumart.ca",
-            "logo": "./valumart.svg",
-            "activeOn": "Sat, 01 Jan 2000 00:00:00 UTC"
+            "url": "https://www.valumart.ca"
         },
         {
             "id": "zehrs",
             "name": "Zehrs Markets",
-            "url": "https://www.zehrs.ca",
-            "logo": "./zehrs.svg",
-            "activeOn": "Sat, 01 Jan 2000 00:00:00 UTC"
+            "url": "https://www.zehrs.ca"
         },
         {
             "id": "maxi",
             "name": "Maxi",
-            "url": "https://www.maxi.ca/",
-            "logo": "./maxi.svg",
-            "activeOn": "Tues, 05 June 2018 4:00:00 UTC"
+            "url": "https://www.maxi.ca"
         },
         {
             "id": "nofrills",
             "name": "No Frills",
-            "url": "https://www.nofrills.ca/",
-            "logo": "./nofrills.svg",
-            "activeOn": "Tues, 05 June 2018 4:00:00 UTC"
+            "url": "https://www.nofrills.ca"
         },
         {
             "id": "wholesaleclub",
             "name": "Wholesale Club",
-            "url": "https://www.wholesaleclub.ca/",
-            "logo": "banner.wholesaleclub.logo",
-            "activeOn": "Tues, 05 June 2018 4: 00: 00 UTC"
+            "url": "https://www.wholesaleclub.ca"
         },
         {
             "id": "tntsupermarket",
             "name": "TnT Supermarket",
-            "url": "https://www.tntsupermarket.com/",
-            "logo": "./tntsupermarket.png",
-            "activeOn": "Tues, 05 June 2018 4: 00: 00 UTC"
+            "url": "https://www.tntsupermarket.com"
         }
     ]
 }
