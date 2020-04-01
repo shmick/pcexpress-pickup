@@ -3,11 +3,11 @@ A script to check for available pickup times at PC Express locations
 
 ### installation using a python3 virtual environment
 ```bash
-git clone https://github.com/shmick/pcexpress-pickup
-python3 -m venv pcexpress-pickup/
-cd pcexpress-pickup/
-source bin/activate
-pip install -r requirements.txt 
+$ git clone https://github.com/shmick/pcexpress-pickup
+$ python3 -m venv pcexpress-pickup/
+$ cd pcexpress-pickup/
+$ source bin/activate
+$ pip install -r requirements.txt 
 ```
 
 ### example output
