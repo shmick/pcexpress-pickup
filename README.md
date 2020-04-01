@@ -1,7 +1,16 @@
 # pcexpress-pickup
 A script to check for available pickup times at PC Express locations
 
-# example output
+### installation using a python3 virtual environment
+```bash
+git clone https://github.com/shmick/pcexpress-pickup
+python3 -m venv pcexpress-pickup/
+cd pcexpress-pickup/
+source bin/activate
+pip install -r requirements.txt 
+```
+
+### example output
 ```
 $ python check.py 
 5 pickup times available at rcss at 15900 Bayview Ave Aurora, Ontario L4G 7Y3
