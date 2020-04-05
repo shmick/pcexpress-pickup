@@ -71,8 +71,7 @@ def check_loblaws( store ):
     # We only want to process the timeSlots entries from the output
     try:
       timeslots = data["timeSlots"]
-    except KeyError:
-      print("Error - no timeSlots found, skipping")
+    except:
       return
 
     # Initialze an empty string to store the pickup_times
