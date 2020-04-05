@@ -37,6 +37,23 @@ $ python check.py
 2020-04-14 17:00:00-04:00
 ```
 
+### example output - lookup by Postal Code and (optional) Distance in KM (default 5)
+```
+$ python check_all_by_postal_code.py A1B2C3 2
+1 pickup times available at loblaw at 2280 Dundas St W Toronto, Ontario M6R 1X3
+2020-04-18 13:00:00-04:00
+
+38 pickup times available at nofrills at 222 Lansdowne Ave Toronto, Ontario M6K 3C6
+2020-04-08 17:00:00-04:00
+2020-04-09 13:00:00-04:00
+<...>
+
+50 pickup times available at nofrills at 900 Dufferin St Toronto, Ontario M6H 4A9
+2020-04-09 13:00:00-04:00
+2020-04-09 15:00:00-04:00
+<...>
+```
+
 # Notes
 https://www.pcexpress.ca/bundle.js contains a list of all pcexpress pickup locations and variety of locatio metadata. 
 
