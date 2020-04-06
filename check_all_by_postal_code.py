@@ -50,7 +50,7 @@ def check_loblaws(store):
     }  # If this header isn't set, the site returns an error
 
     # print( f"Checking #{id} {storeBannerId} at {address} ...")
-    print(f"Checking {storeBannerId} at {address}")
+    # print(f"Checking {storeBannerId} at {address}")
 
     if storeBannerId == "bloor":
         base_url = "https://www.bloorstreetmarket.ca"
