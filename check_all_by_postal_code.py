@@ -13,7 +13,9 @@ MIN_PYTHON = (3, 6)
 if sys.version_info < MIN_PYTHON:
     sys.exit("Python %s.%s or later is required.\n" % MIN_PYTHON)
 
-if len(sys.argv[1]) < 3:
+postal_code = sys.argv[1]
+
+if len(postal_code) < 3:
     print("Please provide a postal code")
     sys.exit(1)  # postal code required
 
@@ -25,7 +27,7 @@ try:
 except:
     within_km = float(5)
 
-geo_url = "https://geogratis.gc.ca/services/geolocation/en/locate?q=" + sys.argv[1]
+geo_url = "https://geogratis.gc.ca/services/geolocation/en/locate?q=" + postal_code
 geo_data = requests.get(geo_url)
 geo_json = geo_data.json()
 coords = geo_json[0]["geometry"]["coordinates"]
