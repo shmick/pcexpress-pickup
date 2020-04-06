@@ -13,12 +13,12 @@ MIN_PYTHON = (3, 6)
 if sys.version_info < MIN_PYTHON:
     sys.exit("Python %s.%s or later is required.\n" % MIN_PYTHON)
 
-from_zone = tz.gettz("UTC")
-to_zone = tz.gettz("America/Toronto")
-
 if len(sys.argv[1]) < 3:
     print("Please provide a postal code")
     sys.exit(1)  # postal code required
+
+from_zone = tz.gettz("UTC")
+to_zone = tz.gettz("America/Toronto")
 
 try:
     within_km = float(sys.argv[2])
