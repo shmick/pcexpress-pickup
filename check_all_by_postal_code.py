@@ -2,8 +2,6 @@ import sys
 import json
 import requests
 import haversine
-
-# from xml.dom.minidom import parseString
 from datetime import datetime
 from dateutil import tz
 from haversine import haversine, Unit
@@ -82,7 +80,7 @@ def check_loblaws(store):
     }  # If this header isn't set, the site returns an error
 
     # Using the base_url and headers, build the full URL
-    url = f"{base_url}/api/pickup-locations/{id}/time-slots"
+    url = base_url + "/api/pickup-locations/" + id + "/time-slots"
     # Make the HTTP request
     r = requests.get(url, headers=headers)
     # Use the builtin JSON decoder
