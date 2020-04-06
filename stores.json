@@ -3,12 +3,12 @@
         {
             "id": "bloor",
             "name": "Bloor Street Market",
-            "url": "http://www.bloorstreetmarket.ca"
+            "url": "https://www.bloorstreetmarket.ca"
         },
         {
             "id": "box",
             "name": "Box",
-            "url": "http://www.boxfoodstores.ca"
+            "url": "https://www.boxfoodstores.ca"
         },
         {
             "id": "independent",
@@ -18,12 +18,12 @@
         {
             "id": "dominion",
             "name": "Dominion Stores in Newfoundland and Labrador",
-            "url": "http://www.newfoundlandgrocerystores.ca"
+            "url": "https://www.newfoundlandgrocerystores.ca"
         },
         {
             "id": "extra",
             "name": "Extra Foods",
-            "url": "http://www.extrafoods.ca"
+            "url": "https://www.extrafoods.ca"
         },
         {
             "id": "fortinos",
@@ -34,11 +34,6 @@
             "id": "loblaw",
             "name": "Loblaws",
             "url": "https://www.loblaws.ca"
-        },
-        {
-            "id": "loblawscity",
-            "name": "Loblaws City Market",
-            "url": null
         },
         {
             "id": "independentcitymarket",
@@ -58,7 +53,7 @@
         {
             "id": "saveeasy",
             "name": "Save Easy",
-            "url": "http://www.saveeasy.ca"
+            "url": "https://www.saveeasy.ca"
         },
         {
             "id": "superstore",
