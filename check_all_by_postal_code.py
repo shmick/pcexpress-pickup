@@ -8,14 +8,22 @@ from datetime import datetime
 from dateutil import tz
 from haversine import haversine, Unit
 
+# f-strings requires python 3.6
+MIN_PYTHON = (3, 6)
+if sys.version_info < MIN_PYTHON:
+    sys.exit("Python %s.%s or later is required.\n" % MIN_PYTHON)
+
 from_zone = tz.gettz("UTC")
 to_zone = tz.gettz("America/Toronto")
+
+if len(sys.argv[1]) < 3:
+    print("Please provide a postal code")
+    sys.exit(1)  # postal code required
 
 try:
     within_km = float(sys.argv[2])
 except:
     within_km = float(5)
-
 
 geo_url = "https://geogratis.gc.ca/services/geolocation/en/locate?q=" + sys.argv[1]
 geo_data = requests.get(geo_url)
