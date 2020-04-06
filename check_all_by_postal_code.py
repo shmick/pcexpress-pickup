@@ -35,6 +35,27 @@ for loc in all_locs["locations"]:
     if haversine(myLatLong, locLatLong) <= within_km:
         stores_to_check.append(loc)
 
+store_urls = {
+    "bloor": "https://www.bloorstreetmarket.ca",
+    "box": "https://www.boxfoodstores.ca",
+    "independent": "https://www.yourindependentgrocer.ca",
+    "dominion": "https://www.newfoundlandgrocerystores.ca",
+    "extra": "https://www.extrafoods.ca",
+    "fortinos": "https://www.fortinos.ca",
+    "loblaw": "https://www.loblaws.ca",
+    "independentcitymarket": "https://www.independentcitymarket.ca",
+    "provigo": "https://www.provigo.ca",
+    "rass": "https://www.atlanticsuperstore.ca",
+    "saveeasy": "https://www.saveeasy.ca",
+    "superstore": "https://www.superstore.ca",
+    "valumart": "https://www.valumart.ca",
+    "zehrs": "https://www.zehrs.ca",
+    "maxi": "https://www.maxi.ca",
+    "nofrills": "https://www.nofrills.ca",
+    "wholesaleclub": "https://www.wholesaleclub.ca",
+    "tntsupermarket": "https://www.tntsupermarket.com",
+}
+
 
 def check_loblaws(store):
     id = store["id"]
@@ -45,66 +66,10 @@ def check_loblaws(store):
 
     address = store["address"]["formattedAddress"]
     storeBannerId = store["storeBannerId"]
+    base_url = store_urls[storeBannerId]
     headers = {
         "Site-Banner": storeBannerId
     }  # If this header isn't set, the site returns an error
-
-    # print( f"Checking #{id} {storeBannerId} at {address} ...")
-    # print(f"Checking {storeBannerId} at {address}")
-
-    if storeBannerId == "bloor":
-        base_url = "https://www.bloorstreetmarket.ca"
-
-    if storeBannerId == "box":
-        base_url = "https://www.boxfoodstores.ca"
-
-    if storeBannerId == "independent":
-        base_url = "https://www.yourindependentgrocer.ca"
-
-    if storeBannerId == "dominion":
-        base_url = "https://www.newfoundlandgrocerystores.ca"
-
-    if storeBannerId == "extra":
-        base_url = "https://www.extrafoods.ca"
-
-    if storeBannerId == "fortinos":
-        base_url = "https://www.fortinos.ca"
-
-    if storeBannerId == "loblaw":
-        base_url = "https://www.loblaws.ca"
-
-    if storeBannerId == "independentcitymarket":
-        base_url = "https://www.independentcitymarket.ca"
-
-    if storeBannerId == "provigo":
-        base_url = "https://www.provigo.ca"
-
-    if storeBannerId == "rass":
-        base_url = "https://www.atlanticsuperstore.ca"
-
-    if storeBannerId == "saveeasy":
-        base_url = "https://www.saveeasy.ca"
-
-    if storeBannerId == "rcss" or storeBannerId == "superstore":
-        base_url = "https://www.superstore.ca"
-
-    if storeBannerId == "valumart":
-        base_url = "https://www.valumart.ca"
-
-    if storeBannerId == "zehrs":
-        base_url = "https://www.zehrs.ca"
-
-    if storeBannerId == "maxi":
-        base_url = "https://www.maxi.ca"
-
-    if storeBannerId == "nofrills":
-        base_url = "https://www.nofrills.ca"
-
-    if storeBannerId == "wholesaleclub":
-        base_url = "https://www.wholesaleclub.ca"
-
-    if storeBannerId == "tntsupermarket":
-        base_url = "https://www.tntsupermarket.com"
 
     # Using the base_url and headers, build the full URL
     url = f"{base_url}/api/pickup-locations/{id}/time-slots"
