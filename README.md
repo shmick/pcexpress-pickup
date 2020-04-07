@@ -49,12 +49,18 @@ $ python check.py
 <...>
 ```
 
+## Run via Docker
+```bash
+$ docker run shmick/pcexpress-pickup -p m6h2b4 3
+```
+
+
 ## Build and run your own container
 ```bash
 $ git clone https://github.com/shmick/pcexpress-pickup
 $ cd pcexpress-pickup/
-$ docker build -t pcexpress:latest .
-$ docker run --rm pcexpress -p m6h2b4 3
+$ docker build -t pcexpress-pickup:latest .
+$ docker run pcexpress-pickup -p m6h2b4 3
 ```
 
 # Notes
