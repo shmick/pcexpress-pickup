@@ -1,13 +1,26 @@
 # pcexpress-pickup
 A script to check for available pickup times at PC Express locations
 
-### installation using a python3 virtual environment
+## Installation using a python3 virtual environment - python 3.6 or newer required
 ```bash
 $ git clone https://github.com/shmick/pcexpress-pickup
 $ python3 -m venv pcexpress-pickup/
 $ cd pcexpress-pickup/
 $ source bin/activate
 $ pip install -r requirements.txt 
+```
+
+## Run via Docker
+```bash
+$ docker run shmick/pcexpress-pickup -p m6h2b4 3
+```
+
+## Build and run your own container
+```bash
+$ git clone https://github.com/shmick/pcexpress-pickup
+$ cd pcexpress-pickup/
+$ docker build -t pcexpress-pickup:latest .
+$ docker run pcexpress-pickup -p m6h2b4 3
 ```
 
 ### example output - lookup by Postal Code and (optional) Distance in KM (default 5)
@@ -49,19 +62,6 @@ $ python check.py
 <...>
 ```
 
-## Run via Docker
-```bash
-$ docker run shmick/pcexpress-pickup -p m6h2b4 3
-```
-
-
-## Build and run your own container
-```bash
-$ git clone https://github.com/shmick/pcexpress-pickup
-$ cd pcexpress-pickup/
-$ docker build -t pcexpress-pickup:latest .
-$ docker run pcexpress-pickup -p m6h2b4 3
-```
 
 # Notes
 https://www.pcexpress.ca/bundle.js contains a list of all pcexpress pickup locations and variety of locatio metadata. 
