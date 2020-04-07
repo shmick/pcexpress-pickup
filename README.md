@@ -10,48 +10,51 @@ $ source bin/activate
 $ pip install -r requirements.txt 
 ```
 
-### example output
+### example output - lookup by Postal Code and (optional) Distance in KM (default 5)
+```
+$ python check_all_by_postal_code.py m6h2b4 3 
+2 pickup times available at nofrills at 222 Lansdowne Ave Toronto, Ontario M6K 3C6
+2020-04-19 13:00:00-04:00
+2020-04-19 15:00:00-04:00
+<...>
+```
+
+### generate a report of the stores that match your postal code and search distance
+```
+$ python check_all_by_postal_code.py m6h2b4 3 report
+store: loblaw, location: 1029, address: 650 Dupont St Toronto, Ontario M6G 4B1
+store: loblaw, location: 1154, address: 2280 Dundas St W Toronto, Ontario M6R 1X3
+store: loblaw, location: 1212, address: 396 St Clair Ave W Toronto, Ontario M5P 3N3
+store: nofrills, location: 3926, address: 222 Lansdowne Ave Toronto, Ontario M6K 3C6
+store: nofrills, location: 0730, address: 900 Dufferin St Toronto, Ontario M6H 4A9
+<...>
+```
+
+### example output of older check.py script
 ```
 $ python check.py 
 5 pickup times available at rcss at 15900 Bayview Ave Aurora, Ontario L4G 7Y3
 2020-04-14 10:00:00-04:00
 2020-04-14 12:00:00-04:00
-2020-04-14 13:00:00-04:00
-2020-04-14 16:00:00-04:00
-2020-04-14 19:00:00-04:00
+<...>
 
 7 pickup times available at nofrills at 9325 Yonge St Richmond Hill, Ontario L4C 0A8
 2020-04-14 09:00:00-04:00
 2020-04-14 10:00:00-04:00
-2020-04-14 13:00:00-04:00
-2020-04-14 14:00:00-04:00
-2020-04-14 15:00:00-04:00
-2020-04-14 16:00:00-04:00
-2020-04-14 18:00:00-04:00
+<...>
 
 5 pickup times available at nofrills at 14800 Yonge St #162 Aurora, Ontario L4G 1N3
 2020-04-14 09:00:00-04:00
 2020-04-14 11:00:00-04:00
-2020-04-14 13:00:00-04:00
-2020-04-14 15:00:00-04:00
-2020-04-14 17:00:00-04:00
+<...>
 ```
 
-### example output - lookup by Postal Code and (optional) Distance in KM (default 5)
-```
-$ python check_all_by_postal_code.py A1B2C3 2
-1 pickup times available at loblaw at 2280 Dundas St W Toronto, Ontario M6R 1X3
-2020-04-18 13:00:00-04:00
-
-38 pickup times available at nofrills at 222 Lansdowne Ave Toronto, Ontario M6K 3C6
-2020-04-08 17:00:00-04:00
-2020-04-09 13:00:00-04:00
-<...>
-
-50 pickup times available at nofrills at 900 Dufferin St Toronto, Ontario M6H 4A9
-2020-04-09 13:00:00-04:00
-2020-04-09 15:00:00-04:00
-<...>
+## Build and run your own container
+```bash
+$ git clone https://github.com/shmick/pcexpress-pickup
+$ cd pcexpress-pickup/
+$ docker build -t pcexpress:latest .
+$ docker run --rm pcexpress -p m6h2b4 3
 ```
 
 # Notes

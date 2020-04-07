@@ -25,6 +25,12 @@ try:
 except:
     within_km = float(5)
 
+try:
+    if sys.argv[3] == "report":
+        mode = "report"
+except:
+    mode = ""
+
 geo_url = "https://geogratis.gc.ca/services/geolocation/en/locate?q=" + postal_code
 geo_data = requests.get(geo_url)
 geo_json = geo_data.json()
@@ -68,49 +74,53 @@ store_urls = {
 def check_loblaws(store):
     id = store["id"]
 
-    # not entirely sure what this is for ("Colleague Testing")
-    if "CT" in id:
+    # CT =  ("Colleague Testing") test location entries
+    # SD = shoppers drugmart, no timeslots exist for SD yet
+    if "CT" in id or "SD" in id:
         return
 
     address = store["address"]["formattedAddress"]
     storeBannerId = store["storeBannerId"]
-    base_url = store_urls[storeBannerId]
-    headers = {
-        "Site-Banner": storeBannerId
-    }  # If this header isn't set, the site returns an error
 
-    # Using the base_url and headers, build the full URL
-    url = base_url + "/api/pickup-locations/" + id + "/time-slots"
-    # Make the HTTP request
-    r = requests.get(url, headers=headers)
-    # Use the builtin JSON decoder
-    data = r.json()
-    # We only want to process the timeSlots entries from the output
-    try:
-        timeslots = data["timeSlots"]
-    except:
-        return
+    if mode == "report":
+        print(f"store: {storeBannerId}, location: {id}, address: {address}")
+    else:
+        base_url = store_urls[storeBannerId]
+        headers = {
+            "Site-Banner": storeBannerId
+        }  # If this header isn't set, the site returns an error
+        # Using the base_url and headers, build the full URL
+        url = base_url + "/api/pickup-locations/" + id + "/time-slots"
+        # Make the HTTP request
+        r = requests.get(url, headers=headers)
+        # Use the builtin JSON decoder
+        data = r.json()
+        # We only want to process the timeSlots entries from the output
+        try:
+            timeslots = data["timeSlots"]
+        except:
+            return
 
-    # Initialze an empty string to store the pickup_times
-    pickup_times = ""
+        # Initialze an empty string to store the pickup_times
+        pickup_times = ""
 
-    # Loop through the results
-    for startTime in timeslots:
-        # Get a list of pickup times where the "available" value is not False
-        if not startTime.get("available") is False:
-            # Convert the UTC times to local time
-            start_time = local_time(startTime["startTime"])
-            # Append the converted start_time to the results
-            pickup_times += start_time
-            pickup_times += "\n"
+        # Loop through the results
+        for startTime in timeslots:
+            # Get a list of pickup times where the "available" value is not False
+            if not startTime.get("available") is False:
+                # Convert the UTC times to local time
+                start_time = local_time(startTime["startTime"])
+                # Append the converted start_time to the results
+                pickup_times += start_time
+                pickup_times += "\n"
 
-    if pickup_times:
-        count = pickup_times.count("\n")
-        output = f"{count} pickup times available at {storeBannerId} at {address}"
-        output += "\n"
-        output += pickup_times
+        if pickup_times:
+            count = pickup_times.count("\n")
+            output = f"{count} pickup times available at {storeBannerId} at {address}"
+            output += "\n"
+            output += pickup_times
 
-        print(output)
+            print(output)
 
 
 # Convert the UTC timestamps to localtime
