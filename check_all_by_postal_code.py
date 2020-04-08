@@ -20,11 +20,10 @@ if len(postal_code) < 3:
 from_zone = tz.gettz("UTC")
 to_zone = tz.gettz("America/Toronto")
 
-supplied_search_km = sys.argv[2]
 default_search_km = 5
 
 try:
-    within_km = float(supplied_search_km)
+    within_km = float(sys.argv[2])
 except:
     within_km = float(default_search_km)
 
