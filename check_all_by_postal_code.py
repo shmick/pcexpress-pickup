@@ -20,33 +20,38 @@ if len(postal_code) < 3:
 from_zone = tz.gettz("UTC")
 to_zone = tz.gettz("America/Toronto")
 
-try:
-    within_km = float(sys.argv[2])
-except:
-    within_km = float(5)
+supplied_search_km = sys.argv[2]
+default_search_km = 5
 
 try:
-    if sys.argv[3] == "report":
+    within_km = float(supplied_search_km)
+except:
+    within_km = float(default_search_km)
+
+
+try:
+    if sys.argv[2] == "report" or sys.argv[3] == "report":
         mode = "report"
 except:
     mode = ""
 
-geo_url = "https://geogratis.gc.ca/services/geolocation/en/locate?q=" + postal_code
-geo_url_bak = "https://geocoder.ca/?geoit=xml&json=1&postal=" + postal_code
+# Switch primary geo lookup to geocoder.ca as the results are more realiable
+geo_url_pri = "https://geocoder.ca/?geoit=xml&json=1&postal=" + postal_code
+# Use the NRC geo lookup service as a backup geo lookup
+geo_url_bak = "https://geogratis.gc.ca/services/geolocation/en/locate?q=" + postal_code
 
-geo_data = requests.get(geo_url)
+geo_data = requests.get(geo_url_pri)
 geo_json = geo_data.json()
 if geo_json:
+    myLat = float(geo_json["latt"])
+    myLong = float(geo_json["longt"])
+    myLatLong = (myLat, myLong)
+if not geo_json:
+    geo_data = requests.get(geo_url_sec)
+    geo_json = geo_data.json()
     coords = geo_json[0]["geometry"]["coordinates"]
     myLat = coords[1]
     myLong = coords[0]
-    myLatLong = (myLat, myLong)
-# Secondary lookup if first postal code lookup returns empty
-if not geo_json:
-    geo_data = requests.get(geo_url_bak)
-    geo_json = geo_data.json()
-    myLat = float(geo_json["latt"])
-    myLong = float(geo_json["longt"])
     myLatLong = (myLat, myLong)
 
 stores_to_check = []
