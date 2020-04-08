@@ -60,8 +60,17 @@ with open("locations.json") as inf:
 
 for loc in all_locs["locations"]:
     locLatLong = (loc["geoPoint"]["latitude"], loc["geoPoint"]["longitude"])
-    if haversine(myLatLong, locLatLong) <= within_km:
+    distance = haversine(myLatLong, locLatLong)
+    if distance <= within_km:
+        # Add a distance key:value pair to the location object so that
+        # locations can be sorted by distance after the list is created
+        loc_distance = {"distance": distance}
+        loc.update(loc_distance)
         stores_to_check.append(loc)
+
+if stores_to_check:
+    # Sort the list of locations by distance
+    stores_to_check = sorted(stores_to_check, key=lambda s: s["distance"])
 
 store_urls = {
     "bloor": "https://www.bloorstreetmarket.ca",
@@ -95,9 +104,12 @@ def check_loblaws(store):
 
     address = store["address"]["formattedAddress"]
     storeBannerId = store["storeBannerId"]
+    distance = int(store["distance"])
 
     if mode == "report":
-        print(f"store: {storeBannerId}, location: {id}, address: {address}")
+        print(
+            f"store: {storeBannerId}, location: {id}, address: {address}, approx {distance} KM away"
+        )
     else:
         base_url = store_urls[storeBannerId]
         headers = {
@@ -130,7 +142,7 @@ def check_loblaws(store):
 
         if pickup_times:
             count = pickup_times.count("\n")
-            output = f"{count} pickup times available at {storeBannerId} at {address}"
+            output = f"{count} pickup times available at {storeBannerId} at {address} approx {distance} KM away"
             output += "\n"
             output += pickup_times
 
