@@ -32,12 +32,22 @@ except:
     mode = ""
 
 geo_url = "https://geogratis.gc.ca/services/geolocation/en/locate?q=" + postal_code
+geo_url_bak = "https://geocoder.ca/?geoit=xml&json=1&postal=" + postal_code
+
 geo_data = requests.get(geo_url)
 geo_json = geo_data.json()
-coords = geo_json[0]["geometry"]["coordinates"]
-pLat = coords[1]
-pLong = coords[0]
-myLatLong = (pLat, pLong)
+if geo_json:
+    coords = geo_json[0]["geometry"]["coordinates"]
+    myLat = coords[1]
+    myLong = coords[0]
+    myLatLong = (myLat, myLong)
+# Secondary lookup if first postal code lookup returns empty
+if not geo_json:
+    geo_data = requests.get(geo_url_bak)
+    geo_json = geo_data.json()
+    myLat = float(geo_json["latt"])
+    myLong = float(geo_json["longt"])
+    myLatLong = (myLat, myLong)
 
 stores_to_check = []
 
