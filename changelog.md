@@ -39,7 +39,7 @@ store: nofrills, location: 3480, address: 245 Dixon Rd Etobicoke, Ontario M9P 2M
 
 * merge [Lookup by PostCode / Specify Max Dist in KM feature](https://github.com/shmick/pcexpress-pickup/pull/1) ( Big thanks to [adam1](https://github.com/1adam) )
 
-## 2020 April 1
+### 2020 April 1
 
 * add LICENSE
 
