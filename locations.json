@@ -1,59 +1,311 @@
 {
   "locations": [
     {
-      "id": "0096SD1282",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart Dufferin & Rutherford",
-      "storeId": "0096",
-      "storeBannerId": "fortinos",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 14,
+      "id": "0925",
+      "contactNumber": "7096430850",
+      "name": "Prince Rupert Street",
+      "storeId": "0925",
+      "storeBannerId": "dominion",
+      "locationType": "STORE",
+      "pickupType": "STORE",
+      "bufferTimeInHours": 2,
       "partner": null,
       "visible": true,
       "isShoppable": true,
       "geoPoint": {
-        "latitude": 43.8418543,
-        "longitude": -79.4838895
+        "latitude": 48.546052,
+        "longitude": -58.582397
       },
       "address": {
         "country": "Canada",
-        "region": "Ontario",
-        "town": "Concord",
-        "line1": "9200 Dufferin Street",
+        "region": "Newfoundland and Labrador",
+        "town": "Stephenville",
+        "line1": "62 Prince Rupert St",
         "line2": null,
-        "postalCode": "L4K 0C6",
-        "formattedAddress": "9200 Dufferin Street Concord, Ontario L4K 0C6"
+        "postalCode": "A2N 3W7",
+        "formattedAddress": "62 Prince Rupert St Stephenville, Newfoundland and Labrador A2N 3W7"
       },
-      "timeZone": "EST5EDT",
+      "timeZone": "Canada/Newfoundland",
       "features": []
     },
     {
-      "id": "0516SD0774",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart 700 Burnhamthorpe",
-      "storeId": "0516",
-      "storeBannerId": "fortinos",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 14,
+      "id": "0927",
+      "contactNumber": "7096513437",
+      "name": "Laurell Road",
+      "storeId": "0927",
+      "storeBannerId": "dominion",
+      "locationType": "STORE",
+      "pickupType": "STORE",
+      "bufferTimeInHours": 2,
       "partner": null,
       "visible": true,
       "isShoppable": true,
       "geoPoint": {
-        "latitude": 43.6077752,
-        "longitude": -79.6183136
+        "latitude": 48.949657,
+        "longitude": -54.60071
       },
       "address": {
         "country": "Canada",
-        "region": "Ontario",
-        "town": "Mississauga",
-        "line1": "700 Burnhamthorpe Road East",
+        "region": "Newfoundland and Labrador",
+        "town": "Gander",
+        "line1": "100 Laurell Rd",
         "line2": null,
-        "postalCode": "L4Y 2X3",
-        "formattedAddress": "700 Burnhamthorpe Road East Mississauga, Ontario L4Y 2X3"
+        "postalCode": "A1V 2V5",
+        "formattedAddress": "100 Laurell Rd Gander, Newfoundland and Labrador A1V 2V5"
       },
-      "timeZone": "EST5EDT",
+      "timeZone": "Canada/Newfoundland",
+      "features": []
+    },
+    {
+      "id": "0928",
+      "contactNumber": "7094894973",
+      "name": "Cromer Avenue",
+      "storeId": "0928",
+      "storeBannerId": "dominion",
+      "locationType": "STORE",
+      "pickupType": "STORE",
+      "bufferTimeInHours": 2,
+      "partner": null,
+      "visible": true,
+      "isShoppable": true,
+      "geoPoint": {
+        "latitude": 48.946344,
+        "longitude": -55.653094
+      },
+      "address": {
+        "country": "Canada",
+        "region": "Newfoundland and Labrador",
+        "town": "Grand Falls",
+        "line1": "17 Cromer Ave",
+        "line2": null,
+        "postalCode": "A2A 1X3",
+        "formattedAddress": "17 Cromer Ave Grand Falls, Newfoundland and Labrador A2A 1X3"
+      },
+      "timeZone": "Canada/Newfoundland",
+      "features": []
+    },
+    {
+      "id": "0906",
+      "contactNumber": "7097866001",
+      "name": "Main Highway",
+      "storeId": "0906",
+      "storeBannerId": "dominion",
+      "locationType": "STORE",
+      "pickupType": "STORE",
+      "bufferTimeInHours": 2,
+      "partner": null,
+      "visible": true,
+      "isShoppable": true,
+      "geoPoint": {
+        "latitude": 47.589666,
+        "longitude": -53.281679
+      },
+      "address": {
+        "country": "Canada",
+        "region": "Newfoundland and Labrador",
+        "town": "Bay Roberts",
+        "line1": "Hwy Main General Delivery",
+        "line2": null,
+        "postalCode": "A0A 1G0",
+        "formattedAddress": "Hwy Main General Delivery Bay Roberts, Newfoundland and Labrador A0A 1G0"
+      },
+      "timeZone": "Canada/Newfoundland",
+      "features": []
+    },
+    {
+      "id": "0934",
+      "contactNumber": "7095761160",
+      "name": "Lake Avenue",
+      "storeId": "0934",
+      "storeBannerId": "dominion",
+      "locationType": "STORE",
+      "pickupType": "STORE",
+      "bufferTimeInHours": 2,
+      "partner": null,
+      "visible": true,
+      "isShoppable": true,
+      "geoPoint": {
+        "latitude": 47.57631,
+        "longitude": -52.702016
+      },
+      "address": {
+        "country": "Canada",
+        "region": "Newfoundland and Labrador",
+        "town": "St. John's",
+        "line1": "20 Lake Ave",
+        "line2": null,
+        "postalCode": "A1A 1H4",
+        "formattedAddress": "20 Lake Ave St. John's, Newfoundland and Labrador A1A 1H4"
+      },
+      "timeZone": "Canada/Newfoundland",
+      "features": []
+    },
+    {
+      "id": "0924",
+      "contactNumber": "7095763576",
+      "name": "Stavanger Drive",
+      "storeId": "0924",
+      "storeBannerId": "dominion",
+      "locationType": "STORE",
+      "pickupType": "STORE",
+      "bufferTimeInHours": 2,
+      "partner": null,
+      "visible": true,
+      "isShoppable": true,
+      "geoPoint": {
+        "latitude": 47.617487,
+        "longitude": -52.719505
+      },
+      "address": {
+        "country": "Canada",
+        "region": "Newfoundland and Labrador",
+        "town": "St. John's",
+        "line1": "55 Stavanger Dr",
+        "line2": null,
+        "postalCode": "A1A 5E8",
+        "formattedAddress": "55 Stavanger Dr St. John's, Newfoundland and Labrador A1A 5E8"
+      },
+      "timeZone": "Canada/Newfoundland",
+      "features": []
+    },
+    {
+      "id": "0923",
+      "contactNumber": "7098342053",
+      "name": "Conception Bay Highway",
+      "storeId": "0923",
+      "storeBannerId": "dominion",
+      "locationType": "STORE",
+      "pickupType": "STORE",
+      "bufferTimeInHours": 2,
+      "partner": null,
+      "visible": true,
+      "isShoppable": true,
+      "geoPoint": {
+        "latitude": 47.51727,
+        "longitude": -52.962649
+      },
+      "address": {
+        "country": "Canada",
+        "region": "Newfoundland and Labrador",
+        "town": "Conception Bay South",
+        "line1": "166 Conception Bay Hwy",
+        "line2": null,
+        "postalCode": "A1W 3A6",
+        "formattedAddress": "166 Conception Bay Hwy Conception Bay South, Newfoundland and Labrador A1W 3A6"
+      },
+      "timeZone": "Canada/Newfoundland",
+      "features": []
+    },
+    {
+      "id": "0935",
+      "contactNumber": "7095790133",
+      "name": "Blackmarsh Road",
+      "storeId": "0935",
+      "storeBannerId": "dominion",
+      "locationType": "STORE",
+      "pickupType": "STORE",
+      "bufferTimeInHours": 2,
+      "partner": null,
+      "visible": true,
+      "isShoppable": true,
+      "geoPoint": {
+        "latitude": 47.546078,
+        "longitude": -52.744303
+      },
+      "address": {
+        "country": "Canada",
+        "region": "Newfoundland and Labrador",
+        "town": "St. John's",
+        "line1": "260 Blackmarsh Rd",
+        "line2": null,
+        "postalCode": "A1E 1T2",
+        "formattedAddress": "260 Blackmarsh Rd St. John's, Newfoundland and Labrador A1E 1T2"
+      },
+      "timeZone": "Canada/Newfoundland",
+      "features": []
+    },
+    {
+      "id": "0926",
+      "contactNumber": "7096349450",
+      "name": "Murphy Square",
+      "storeId": "0926",
+      "storeBannerId": "dominion",
+      "locationType": "STORE",
+      "pickupType": "STORE",
+      "bufferTimeInHours": 2,
+      "partner": null,
+      "visible": true,
+      "isShoppable": true,
+      "geoPoint": {
+        "latitude": 48.957712,
+        "longitude": -57.923965
+      },
+      "address": {
+        "country": "Canada",
+        "region": "Newfoundland and Labrador",
+        "town": "Corner Brook",
+        "line1": "5 Murphy Sq",
+        "line2": null,
+        "postalCode": "A2H 1R4",
+        "formattedAddress": "5 Murphy Sq Corner Brook, Newfoundland and Labrador A2H 1R4"
+      },
+      "timeZone": "Canada/Newfoundland",
+      "features": []
+    },
+    {
+      "id": "0913",
+      "contactNumber": "7095963084",
+      "name": "Columbus Drive",
+      "storeId": "0913",
+      "storeBannerId": "dominion",
+      "locationType": "STORE",
+      "pickupType": "STORE",
+      "bufferTimeInHours": 2,
+      "partner": null,
+      "visible": true,
+      "isShoppable": true,
+      "geoPoint": {
+        "latitude": 47.728145,
+        "longitude": -53.244545
+      },
+      "address": {
+        "country": "Canada",
+        "region": "Newfoundland and Labrador",
+        "town": "Carbonear",
+        "line1": "120 Columbus Dr",
+        "line2": null,
+        "postalCode": "A1Y 1B3",
+        "formattedAddress": "120 Columbus Dr Carbonear, Newfoundland and Labrador A1Y 1B3"
+      },
+      "timeZone": "Canada/Newfoundland",
+      "features": []
+    },
+    {
+      "id": "0922",
+      "contactNumber": "7095761236",
+      "name": "Old Placentia Road",
+      "storeId": "0922",
+      "storeBannerId": "dominion",
+      "locationType": "STORE",
+      "pickupType": "STORE",
+      "bufferTimeInHours": 2,
+      "partner": null,
+      "visible": true,
+      "isShoppable": true,
+      "geoPoint": {
+        "latitude": 47.503773,
+        "longitude": -52.813782
+      },
+      "address": {
+        "country": "Canada",
+        "region": "Newfoundland and Labrador",
+        "town": "Mount Pearl",
+        "line1": "Pearlgate Plaza 150 Old Placentia Rd",
+        "line2": null,
+        "postalCode": "A1N 4P5",
+        "formattedAddress": "Pearlgate Plaza 150 Old Placentia Rd Mount Pearl, Newfoundland and Labrador A1N 4P5"
+      },
+      "timeZone": "Canada/Newfoundland",
       "features": []
     },
     {
@@ -80,34 +332,6 @@
         "line2": null,
         "postalCode": "L7A 2Y7",
         "formattedAddress": "35 Worthington Ave Brampton, Ontario L7A 2Y7"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "0516SD1100",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart Eglinton & Hwy 10",
-      "storeId": "0516",
-      "storeBannerId": "fortinos",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 14,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.6080062,
-        "longitude": -79.6528958
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Mississauga",
-        "line1": "5033 Hurontario Street",
-        "line2": null,
-        "postalCode": "L4Z 3X7",
-        "formattedAddress": "5033 Hurontario Street Mississauga, Ontario L4Z 3X7"
       },
       "timeZone": "EST5EDT",
       "features": []
@@ -169,34 +393,6 @@
       "features": []
     },
     {
-      "id": "2732LC0001",
-      "contactNumber": "18442958219",
-      "name": "Bronte GO Station",
-      "storeId": "2732",
-      "storeBannerId": "fortinos",
-      "locationType": "SPOKE",
-      "pickupType": "LOCKER",
-      "bufferTimeInHours": 7,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.41693,
-        "longitude": -79.722438
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Oakville",
-        "line1": "2104 Wyecroft Rd",
-        "line2": null,
-        "postalCode": "L6L 5V6",
-        "formattedAddress": "2104 Wyecroft Rd Oakville, Ontario L6L 5V6"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
       "id": "2265",
       "contactNumber": "9055294290",
       "name": "Dundurn",
@@ -220,118 +416,6 @@
         "line2": null,
         "postalCode": "L8P 4W3",
         "formattedAddress": "B-50 Dundurn St S Hamilton, Ontario L8P 4W3"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "2732LC0002",
-      "contactNumber": "18442958219",
-      "name": "Oakville GO Station (Northwest Tunnel Entrance)",
-      "storeId": "2732",
-      "storeBannerId": "fortinos",
-      "locationType": "SPOKE",
-      "pickupType": "LOCKER",
-      "bufferTimeInHours": 7,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.453417,
-        "longitude": -79.684333
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Oakville",
-        "line1": "214 Cross Ave",
-        "line2": null,
-        "postalCode": null,
-        "formattedAddress": "214 Cross Ave Oakville, Ontario "
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "0516SD1272",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart Streetsville",
-      "storeId": "0516",
-      "storeBannerId": "fortinos",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 14,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.582603,
-        "longitude": -79.719828
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Mississauga",
-        "line1": "128 Queen Street South",
-        "line2": null,
-        "postalCode": "L5M 1K8",
-        "formattedAddress": "128 Queen Street South Mississauga, Ontario L5M 1K8"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "0096SD0854",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart Finchdale Plaza",
-      "storeId": "0096",
-      "storeBannerId": "fortinos",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 14,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.7476198,
-        "longitude": -79.5612946
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "North York",
-        "line1": "2550 Finch Avenue West",
-        "line2": null,
-        "postalCode": "M9M 2G3",
-        "formattedAddress": "2550 Finch Avenue West North York, Ontario M9M 2G3"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "0096SD0753",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart Woodbridge Mall",
-      "storeId": "0096",
-      "storeBannerId": "fortinos",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 14,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.7762655,
-        "longitude": -79.6120281
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Woodbridge",
-        "line1": "5694 Hwy 7 #1",
-        "line2": null,
-        "postalCode": "L4L 1T8",
-        "formattedAddress": "5694 Hwy 7 #1 Woodbridge, Ontario L4L 1T8"
       },
       "timeZone": "EST5EDT",
       "features": []
@@ -365,34 +449,6 @@
       "features": []
     },
     {
-      "id": "0516SD1093",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart Bovaird & Great Lakes",
-      "storeId": "0516",
-      "storeBannerId": "fortinos",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 14,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.731475,
-        "longitude": -79.7610958
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Brampton",
-        "line1": "25 Great Lakes Drive",
-        "line2": null,
-        "postalCode": "L6R 2S5",
-        "formattedAddress": "25 Great Lakes Drive Brampton, Ontario L6R 2S5"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
       "id": "0048",
       "contactNumber": "9053834010",
       "name": "Mall Road",
@@ -421,62 +477,6 @@
       "features": []
     },
     {
-      "id": "0516SD0695",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart Clarkson Crossing",
-      "storeId": "0516",
-      "storeBannerId": "fortinos",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 14,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.5077795,
-        "longitude": -79.6324147
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Mississauga",
-        "line1": "920 Southdown Road #1",
-        "line2": null,
-        "postalCode": "L5J 2Y4",
-        "formattedAddress": "920 Southdown Road #1 Mississauga, Ontario L5J 2Y4"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "0096SD0700",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart Rutherford S.C.",
-      "storeId": "0096",
-      "storeBannerId": "fortinos",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 14,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.8176216,
-        "longitude": -79.6043407
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Woodbridge",
-        "line1": "5100 Rutherford Road",
-        "line2": null,
-        "postalCode": "L4H 2J2",
-        "formattedAddress": "5100 Rutherford Road Woodbridge, Ontario L4H 2J2"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
       "id": "0199",
       "contactNumber": "9052574906",
       "name": "Neyagawa",
@@ -500,34 +500,6 @@
         "line2": "(at Neyagawa)",
         "postalCode": "L6M 4M2",
         "formattedAddress": "493 Dundas St W (at Neyagawa) Oakville, Ontario L6M 4M2"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "2732TR0002",
-      "contactNumber": "18005659690",
-      "name": "Burlington GO Station (Queensway Drive Exit)",
-      "storeId": "2732",
-      "storeBannerId": "fortinos",
-      "locationType": "SPOKE",
-      "pickupType": "TRUCK",
-      "bufferTimeInHours": 8,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.3402451,
-        "longitude": -79.8122008
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Burlington",
-        "line1": "2101 Fairview St",
-        "line2": null,
-        "postalCode": "L7R 2C8",
-        "formattedAddress": "2101 Fairview St Burlington, Ontario L7R 2C8"
       },
       "timeZone": "EST5EDT",
       "features": []
@@ -645,34 +617,6 @@
       "features": []
     },
     {
-      "id": "2732CN0001",
-      "contactNumber": "18442958219",
-      "name": "Clarkson GO Station",
-      "storeId": "2732",
-      "storeBannerId": "fortinos",
-      "locationType": "SPOKE",
-      "pickupType": "CONTAINER",
-      "bufferTimeInHours": 4,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.511611,
-        "longitude": -79.634611
-      },
-      "address": {
-        "country": "Canada",
-        "region": "ON",
-        "town": "Mississauga",
-        "line1": "1110 Southdown Rd.",
-        "line2": null,
-        "postalCode": "L5J 0A3",
-        "formattedAddress": "1110 Southdown Rd. Mississauga, ON L5J 0A3"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
       "id": "1436",
       "contactNumber": "4167826128",
       "name": "North York Lawrence",
@@ -780,62 +724,6 @@
         "line2": null,
         "postalCode": "L7P 4M8",
         "formattedAddress": "2025 Guelph Line Burlington, Ontario L7P 4M8"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "0516SD0693",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart Northgate Plaza",
-      "storeId": "0516",
-      "storeBannerId": "fortinos",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 13,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.7337008,
-        "longitude": -79.7207043
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Brampton",
-        "line1": "980 Central Park Drive",
-        "line2": null,
-        "postalCode": "L6S 3L7",
-        "formattedAddress": "980 Central Park Drive Brampton, Ontario L6S 3L7"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "0096SD1268",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart Yonge & Yongehurst",
-      "storeId": "0096",
-      "storeBannerId": "fortinos",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 14,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.8633631,
-        "longitude": -79.434883
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Richmond Hill",
-        "line1": "9651 Yonge Street",
-        "line2": null,
-        "postalCode": "L4C 1V7",
-        "formattedAddress": "9651 Yonge Street Richmond Hill, Ontario L4C 1V7"
       },
       "timeZone": "EST5EDT",
       "features": []
@@ -981,62 +869,6 @@
       "features": []
     },
     {
-      "id": "0200",
-      "contactNumber": "9055294290",
-      "name": "Dundurn",
-      "storeId": "0200",
-      "storeBannerId": "fortinos",
-      "locationType": "STORE",
-      "pickupType": "STORE",
-      "bufferTimeInHours": 2,
-      "partner": null,
-      "visible": false,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.26122,
-        "longitude": -79.889341
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Hamilton",
-        "line1": "B-50 Dundurn St S",
-        "line2": null,
-        "postalCode": "L8P 4W3",
-        "formattedAddress": "B-50 Dundurn St S Hamilton, Ontario L8P 4W3"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "2732TR0001",
-      "contactNumber": "18442958219",
-      "name": "Oakville GO Station (Station Building)",
-      "storeId": "2732",
-      "storeBannerId": "fortinos",
-      "locationType": "SPOKE",
-      "pickupType": "TRUCK",
-      "bufferTimeInHours": 16,
-      "partner": null,
-      "visible": false,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.455667,
-        "longitude": -79.6825
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Oakville",
-        "line1": "214 Cross Ave",
-        "line2": null,
-        "postalCode": "L6J 2W6",
-        "formattedAddress": "214 Cross Ave Oakville, Ontario L6J 2W6"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
       "id": "0080",
       "contactNumber": "9058324586",
       "name": "Major MacKenzie",
@@ -1060,62 +892,6 @@
         "line2": null,
         "postalCode": "L6A 3N9",
         "formattedAddress": "2911 Major MacKenzie Dr Vaughan, Ontario L6A 3N9"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "0516SD1058",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart Queen & Kennedy",
-      "storeId": "0516",
-      "storeBannerId": "fortinos",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 14,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.6946854,
-        "longitude": -79.7497609
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Brampton",
-        "line1": "1 Kennedy Road South",
-        "line2": null,
-        "postalCode": "L6W 3C9",
-        "formattedAddress": "1 Kennedy Road South Brampton, Ontario L6W 3C9"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "0096SD1179",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart Yonge & High Tech",
-      "storeId": "0096",
-      "storeBannerId": "fortinos",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 14,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.8435924,
-        "longitude": -79.4302325
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Richmond Hill",
-        "line1": "8865 Yonge Street",
-        "line2": null,
-        "postalCode": "L4C 6Z1",
-        "formattedAddress": "8865 Yonge Street Richmond Hill, Ontario L4C 6Z1"
       },
       "timeZone": "EST5EDT",
       "features": []
@@ -1289,34 +1065,6 @@
       "features": []
     },
     {
-      "id": "0820",
-      "contactNumber": "6136329215",
-      "name": "Laurin's Your Independent Grocer",
-      "storeId": "0820",
-      "storeBannerId": "independent",
-      "locationType": "STORE",
-      "pickupType": "STORE",
-      "bufferTimeInHours": 2,
-      "partner": null,
-      "visible": false,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 45.593292,
-        "longitude": -74.601704
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Hawkesbury",
-        "line1": "1560 Cameron St",
-        "line2": null,
-        "postalCode": "K6A 3S5",
-        "formattedAddress": "1560 Cameron St Hawkesbury, Ontario K6A 3S5"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
       "id": "1824",
       "contactNumber": "3066645033",
       "name": "Dennis' Your Independent Grocer",
@@ -1368,34 +1116,6 @@
         "line2": "PO Box 517",
         "postalCode": "K4M 1A5",
         "formattedAddress": "1160 Beaverwood Rd PO Box 517 Manotick, Ontario K4M 1A5"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "2656",
-      "contactNumber": "6137331590",
-      "name": "McDonough's Your Independent Grocer",
-      "storeId": "2656",
-      "storeBannerId": "independent",
-      "locationType": "STORE",
-      "pickupType": "STORE",
-      "bufferTimeInHours": 2,
-      "partner": null,
-      "visible": false,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 45.38642,
-        "longitude": -75.676506
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Ottawa",
-        "line1": "2241 Riverside Dr",
-        "line2": null,
-        "postalCode": "K1H 7X5",
-        "formattedAddress": "2241 Riverside Dr Ottawa, Ontario K1H 7X5"
       },
       "timeZone": "EST5EDT",
       "features": []
@@ -1874,34 +1594,6 @@
         "formattedAddress": "10527 101 Ave Lac La Biche, Alberta T0A 2C0"
       },
       "timeZone": "MST7MDT",
-      "features": []
-    },
-    {
-      "id": "0816",
-      "contactNumber": null,
-      "name": "Robinsons YIG",
-      "storeId": "0816",
-      "storeBannerId": "independent",
-      "locationType": "STORE",
-      "pickupType": "STORE",
-      "bufferTimeInHours": 15,
-      "partner": null,
-      "visible": false,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 45.34512,
-        "longitude": -79.22779
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Huntsville",
-        "line1": "131 Howland Drive",
-        "line2": null,
-        "postalCode": "P1H 2P7",
-        "formattedAddress": "131 Howland Drive Huntsville, Ontario P1H 2P7"
-      },
-      "timeZone": "EST5EDT",
       "features": []
     },
     {
@@ -2432,34 +2124,6 @@
         "line2": "Po Box 220",
         "postalCode": "N4X 1B1",
         "formattedAddress": "780 Queen St E Po Box 220 St Mary's, Ontario N4X 1B1"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "0459",
-      "contactNumber": "7058690284",
-      "name": "Winkel's Your Independent Grocer",
-      "storeId": "0459",
-      "storeBannerId": "independent",
-      "locationType": "STORE",
-      "pickupType": "STORE",
-      "bufferTimeInHours": 2,
-      "partner": null,
-      "visible": false,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 46.246825,
-        "longitude": -81.759452
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Espanola",
-        "line1": "745 Centre St",
-        "line2": null,
-        "postalCode": "P5E 1S8",
-        "formattedAddress": "745 Centre St Espanola, Ontario P5E 1S8"
       },
       "timeZone": "EST5EDT",
       "features": []
@@ -3865,34 +3529,6 @@
       "features": []
     },
     {
-      "id": "1066SD0989",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart Bloor West Village",
-      "storeId": "1066",
-      "storeBannerId": "loblaw",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 16,
-      "partner": null,
-      "visible": false,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.6506103,
-        "longitude": -79.4786414
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Toronto",
-        "line1": "2223 Bloor St W",
-        "line2": null,
-        "postalCode": "M6S 1N7",
-        "formattedAddress": "2223 Bloor St W Toronto, Ontario M6S 1N7"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
       "id": "1208",
       "contactNumber": "9057371222",
       "name": "Yonge Street",
@@ -3949,92 +3585,6 @@
       "features": []
     },
     {
-      "id": "1001SD1426",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart Simcoe & Conlin",
-      "storeId": "1001",
-      "storeBannerId": "loblaw",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 15,
-      "partner": null,
-      "visible": false,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.9468801,
-        "longitude": -78.8959133
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Oshawa",
-        "line1": "2045 Simcoe St N",
-        "line2": null,
-        "postalCode": "L1H 7K4",
-        "formattedAddress": "2045 Simcoe St N Oshawa, Ontario L1H 7K4"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "1004SG",
-      "contactNumber": "8002962332",
-      "name": "Liberty Village Shop & Scan",
-      "storeId": "1004",
-      "storeBannerId": "loblaw",
-      "locationType": "SPOKE",
-      "pickupType": "TRUCK",
-      "bufferTimeInHours": 6,
-      "partner": null,
-      "visible": false,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.638312,
-        "longitude": -79.420357
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Toronto",
-        "line1": "Corner of Pirandello & East Liberty",
-        "line2": null,
-        "postalCode": "M6K 3R7",
-        "formattedAddress": "Corner of Pirandello & East Liberty Toronto, Ontario M6K 3R7"
-      },
-      "timeZone": "EST5EDT",
-      "features": [
-        "SHOP_AND_GO"
-      ]
-    },
-    {
-      "id": "1066SD0825",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart The East Mall",
-      "storeId": "1066",
-      "storeBannerId": "loblaw",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 16,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.6555232,
-        "longitude": -79.5661241
-      },
-      "address": {
-        "country": null,
-        "region": "Ontario",
-        "town": "Etobicoke",
-        "line1": "600 The East Mall #1",
-        "line2": null,
-        "postalCode": "M9B 4S1",
-        "formattedAddress": "600 The East Mall #1 Etobicoke, Ontario M9B 4S1"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
       "id": "1028",
       "contactNumber": "9057716284",
       "name": "High Tech Road",
@@ -4058,34 +3608,6 @@
         "line2": null,
         "postalCode": "L4B 4R2",
         "formattedAddress": "301 High Tech Rd Richmond Hill, Ontario L4B 4R2"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "1001SD1251",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart Mill & King",
-      "storeId": "1001",
-      "storeBannerId": "loblaw",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 15,
-      "partner": null,
-      "visible": false,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.9173947,
-        "longitude": -78.590628
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Newcastle",
-        "line1": "1 King Ave E",
-        "line2": null,
-        "postalCode": "L1B 1H3",
-        "formattedAddress": "1 King Ave E Newcastle, Ontario L1B 1H3"
       },
       "timeZone": "EST5EDT",
       "features": []
@@ -4119,34 +3641,6 @@
       "features": []
     },
     {
-      "id": "1001SD0675",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart Queens Common",
-      "storeId": "1001",
-      "storeBannerId": "loblaw",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 15,
-      "partner": null,
-      "visible": false,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.8761135,
-        "longitude": -78.9664533
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Whitby",
-        "line1": "910 Dundas St W",
-        "line2": null,
-        "postalCode": "L1P 1P7",
-        "formattedAddress": "910 Dundas St W Whitby, Ontario L1P 1P7"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
       "id": "1092",
       "contactNumber": "4164250120",
       "name": "Redway Road",
@@ -4170,62 +3664,6 @@
         "line2": null,
         "postalCode": "M4H 1P6",
         "formattedAddress": "11 Redway Rd Toronto, Ontario M4H 1P6"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "1021SD1287",
-      "contactNumber": "8442958219",
-      "name": "Shoppers Drug Mart Woodbine & O'Connor",
-      "storeId": "1021",
-      "storeBannerId": "loblaw",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 12,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.6987937,
-        "longitude": -79.3275968
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": " Toronto",
-        "line1": "1500 Woodbine Ave",
-        "line2": null,
-        "postalCode": "M4C 4G9",
-        "formattedAddress": "1500 Woodbine Ave  Toronto, Ontario M4C 4G9"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "1032SD1219",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart 14th & Markham Road",
-      "storeId": "1032",
-      "storeBannerId": "loblaw",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 16,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.853548,
-        "longitude": -79.257193
-      },
-      "address": {
-        "country": null,
-        "region": "Ontario",
-        "town": "Markham",
-        "line1": "7700 Markham Rd",
-        "line2": null,
-        "postalCode": "L3S 3K5",
-        "formattedAddress": "7700 Markham Rd Markham, Ontario L3S 3K5"
       },
       "timeZone": "EST5EDT",
       "features": []
@@ -4287,62 +3725,6 @@
       "features": []
     },
     {
-      "id": "1032SD0613",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart Highway 7",
-      "storeId": "1032",
-      "storeBannerId": "loblaw",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 16,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.878074,
-        "longitude": -79.238958
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Markham",
-        "line1": "6579 Hwy 7",
-        "line2": null,
-        "postalCode": "L3P 3B4",
-        "formattedAddress": "6579 Hwy 7 Markham, Ontario L3P 3B4"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "1032SD0847",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart Warden & Steeles",
-      "storeId": "1032",
-      "storeBannerId": "loblaw",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 16,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.8214203,
-        "longitude": -79.3291002
-      },
-      "address": {
-        "country": null,
-        "region": "Ontario",
-        "town": "Markham",
-        "line1": "C2, 7060 Warden Ave",
-        "line2": null,
-        "postalCode": "L3R 5Y2",
-        "formattedAddress": "C2, 7060 Warden Ave Markham, Ontario L3R 5Y2"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
       "id": "1090",
       "contactNumber": "9052719925 Ext 6",
       "name": "Lakeshore Road West",
@@ -4366,34 +3748,6 @@
         "line2": null,
         "postalCode": "L5H 1G6",
         "formattedAddress": "250 Lakeshore Rd W Mississauga, Ontario L5H 1G6"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "1066SD0903",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart Browns Line & Lakeshore",
-      "storeId": "1066",
-      "storeBannerId": "loblaw",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 16,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.594101,
-        "longitude": -79.539314
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Etobicoke",
-        "line1": "3730 Lake Shore Blvd W unit 102",
-        "line2": null,
-        "postalCode": "M8W 1N6",
-        "formattedAddress": "3730 Lake Shore Blvd W unit 102 Etobicoke, Ontario M8W 1N6"
       },
       "timeZone": "EST5EDT",
       "features": []
@@ -4450,90 +3804,6 @@
         "line2": null,
         "postalCode": "K1V 1J5",
         "formattedAddress": "2210 Bank St Ottawa, Ontario K1V 1J5"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "1021SD0859",
-      "contactNumber": "8442958219",
-      "name": "Shoppers Drug Mart Eastown Centre",
-      "storeId": "1021",
-      "storeBannerId": "loblaw",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 12,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.7363941,
-        "longitude": -79.2496824
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Scarborough",
-        "line1": "2751 Eglinton Ave E ",
-        "line2": null,
-        "postalCode": "M1J 2C7",
-        "formattedAddress": "2751 Eglinton Ave E  Scarborough, Ontario M1J 2C7"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "1066SD0974",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart Westway Plaza",
-      "storeId": "1066",
-      "storeBannerId": "loblaw",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 14,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.6933022,
-        "longitude": -79.5578676
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Etobicoke",
-        "line1": "1735 Kipling Avenue",
-        "line2": null,
-        "postalCode": "M9R 2Y8",
-        "formattedAddress": "1735 Kipling Avenue Etobicoke, Ontario M9R 2Y8"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "1011PCP001",
-      "contactNumber": "18442958219",
-      "name": "1PCC Loblaws Self-Serve",
-      "storeId": "1011",
-      "storeBannerId": "loblaw",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 5,
-      "partner": null,
-      "visible": false,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.6185201,
-        "longitude": -79.7688961
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Brampton",
-        "line1": "President's Choice Circle",
-        "line2": "1",
-        "postalCode": "L6Y 5S5",
-        "formattedAddress": "President's Choice Circle 1 Brampton, Ontario L6Y 5S5"
       },
       "timeZone": "EST5EDT",
       "features": []
@@ -4623,62 +3893,6 @@
       "features": []
     },
     {
-      "id": "1079AA",
-      "contactNumber": "18442958219",
-      "name": "Location closing April 26th - Liberty Village",
-      "storeId": "1079",
-      "storeBannerId": "loblaw",
-      "locationType": "SPOKE",
-      "pickupType": "TRUCK",
-      "bufferTimeInHours": 6,
-      "partner": null,
-      "visible": false,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.638752,
-        "longitude": -79.413888
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Toronto",
-        "line1": "Corner of Pirandello & East Liberty",
-        "line2": null,
-        "postalCode": "M6K 3R7",
-        "formattedAddress": "Corner of Pirandello & East Liberty Toronto, Ontario M6K 3R7"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "1001TR0001",
-      "contactNumber": "18442958219",
-      "name": "Rouge Hill GO Station",
-      "storeId": "1001",
-      "storeBannerId": "loblaw",
-      "locationType": "SPOKE",
-      "pickupType": "TRUCK",
-      "bufferTimeInHours": 8,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.7805,
-        "longitude": -79.131694
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Scarborough",
-        "line1": "6251 Lawrence Ave E",
-        "line2": null,
-        "postalCode": null,
-        "formattedAddress": "6251 Lawrence Ave E Scarborough, Ontario "
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
       "id": "1007",
       "contactNumber": "4162601942",
       "name": "Carlton Street",
@@ -4707,34 +3921,6 @@
       "features": [
         "SHOP_AND_GO"
       ]
-    },
-    {
-      "id": "1001LC0001",
-      "contactNumber": "18442958219",
-      "name": "Whitby GO Station",
-      "storeId": "1001",
-      "storeBannerId": "loblaw",
-      "locationType": "SPOKE",
-      "pickupType": "LOCKER",
-      "bufferTimeInHours": 7,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.864333,
-        "longitude": -78.939056
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Whitby",
-        "line1": "1350 Brock St S",
-        "line2": null,
-        "postalCode": "L1N 6G3",
-        "formattedAddress": "1350 Brock St S Whitby, Ontario L1N 6G3"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
     },
     {
       "id": "1050",
@@ -4821,34 +4007,6 @@
       "features": []
     },
     {
-      "id": "1066SD0845",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart Martinway Plaza",
-      "storeId": "1066",
-      "storeBannerId": "loblaw",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 16,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.682999,
-        "longitude": -79.565661
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Etobicoke",
-        "line1": "415 The Westway #1",
-        "line2": null,
-        "postalCode": "M9R 1H5",
-        "formattedAddress": "415 The Westway #1 Etobicoke, Ontario M9R 1H5"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
       "id": "1032",
       "contactNumber": "9052941680",
       "name": "Bullock Drive",
@@ -4872,34 +4030,6 @@
         "line2": null,
         "postalCode": "L3P 1W2",
         "formattedAddress": "200 Bullock Dr Markham, Ontario L3P 1W2"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "1032SD0920",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart Markham Town Square",
-      "storeId": "1032",
-      "storeBannerId": "loblaw",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 16,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.857516,
-        "longitude": -79.331636
-      },
-      "address": {
-        "country": null,
-        "region": "Ontario",
-        "town": "Unionville",
-        "line1": "8601 Warden Ave",
-        "line2": null,
-        "postalCode": "L3R 0B5",
-        "formattedAddress": "8601 Warden Ave Unionville, Ontario L3R 0B5"
       },
       "timeZone": "EST5EDT",
       "features": []
@@ -4961,34 +4091,6 @@
       "features": []
     },
     {
-      "id": "1032SD1220",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart McCowan & Bur Oak",
-      "storeId": "1032",
-      "storeBannerId": "loblaw",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 16,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.894336,
-        "longitude": -79.291723
-      },
-      "address": {
-        "country": null,
-        "region": "Ontario",
-        "town": "Markham",
-        "line1": "9620 McCowan Rd",
-        "line2": null,
-        "postalCode": "L3P 8M1",
-        "formattedAddress": "9620 McCowan Rd Markham, Ontario L3P 8M1"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
       "id": "1170",
       "contactNumber": "6137893330",
       "name": "Rideau Street",
@@ -5012,34 +4114,6 @@
         "line2": null,
         "postalCode": "K1N 5Y6",
         "formattedAddress": "363 Rideau St Ottawa, Ontario K1N 5Y6"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "1032SD1014",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart Unionville",
-      "storeId": "1032",
-      "storeBannerId": "loblaw",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 16,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.863386,
-        "longitude": -79.305327
-      },
-      "address": {
-        "country": null,
-        "region": "Ontario",
-        "town": "Unionville",
-        "line1": "4630 Hwy 7 #1",
-        "line2": null,
-        "postalCode": "L3R 1M5",
-        "formattedAddress": "4630 Hwy 7 #1 Unionville, Ontario L3R 1M5"
       },
       "timeZone": "EST5EDT",
       "features": []
@@ -5101,34 +4175,6 @@
       "features": []
     },
     {
-      "id": "1028PCC",
-      "contactNumber": "9056080725",
-      "name": "1 President's Choice Circle - LOBLAW COLLEAGUES PICKUP ONLY",
-      "storeId": "1011",
-      "storeBannerId": "loblaw",
-      "locationType": "SPOKE",
-      "pickupType": "TRUCK",
-      "bufferTimeInHours": 4,
-      "partner": null,
-      "visible": false,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.61,
-        "longitude": -79.76
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Brampton",
-        "line1": "President's Choice Circle",
-        "line2": "1",
-        "postalCode": "L6Y 5S5",
-        "formattedAddress": "President's Choice Circle 1 Brampton, Ontario L6Y 5S5"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
       "id": "1029",
       "contactNumber": "4165881441",
       "name": "Dupont Street",
@@ -5155,36 +4201,6 @@
       },
       "timeZone": "EST5EDT",
       "features": []
-    },
-    {
-      "id": "1000SG",
-      "contactNumber": null,
-      "name": "Queen Street West - Shop & Scan",
-      "storeId": "1000",
-      "storeBannerId": "loblaw",
-      "locationType": "SPOKE",
-      "pickupType": "TRUCK",
-      "bufferTimeInHours": 4,
-      "partner": null,
-      "visible": false,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.6475,
-        "longitude": -79.40176
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Toronto",
-        "line1": "SHOP & SCAN - 585 Queen Street West",
-        "line2": "585",
-        "postalCode": "M5V 2B7",
-        "formattedAddress": "SHOP & SCAN - 585 Queen Street West 585 Toronto, Ontario M5V 2B7"
-      },
-      "timeZone": "EST5EDT",
-      "features": [
-        "SHOP_AND_GO"
-      ]
     },
     {
       "id": "1023",
@@ -5411,34 +4427,6 @@
       "features": []
     },
     {
-      "id": "1021SD1382",
-      "contactNumber": "8442958219",
-      "name": "Shoppers Drug Mart Kingston & Sandown",
-      "storeId": "1021",
-      "storeBannerId": "loblaw",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 12,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.7067404,
-        "longitude": -79.2523254
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Scarborough",
-        "line1": "2301 Kingston Rd",
-        "line2": null,
-        "postalCode": "M1N 1V1",
-        "formattedAddress": "2301 Kingston Rd Scarborough, Ontario M1N 1V1"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
       "id": "1019",
       "contactNumber": "4167331441",
       "name": "Bayview Avenue",
@@ -5497,62 +4485,6 @@
       ]
     },
     {
-      "id": "1001SD1413",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart Westney & Williamson",
-      "storeId": "1001",
-      "storeBannerId": "loblaw",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 15,
-      "partner": null,
-      "visible": false,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.8849654,
-        "longitude": -79.0469291
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Ajax",
-        "line1": "95 Williamson Dr W",
-        "line2": null,
-        "postalCode": "L1T 0K9",
-        "formattedAddress": "95 Williamson Dr W Ajax, Ontario L1T 0K9"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "1079LD",
-      "contactNumber": "4163041375",
-      "name": "Loblaw Digital Self-Serve",
-      "storeId": "1079",
-      "storeBannerId": "loblaw",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 6,
-      "partner": null,
-      "visible": false,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.6389933,
-        "longitude": -79.422218
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Toronto",
-        "line1": "40 Hanna Avenue, 5th Floor",
-        "line2": null,
-        "postalCode": "M6K 3N7",
-        "formattedAddress": "40 Hanna Avenue, 5th Floor Toronto, Ontario M6K 3N7"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
       "id": "1114",
       "contactNumber": "6135993840",
       "name": "Earl Grey Drive",
@@ -5576,62 +4508,6 @@
         "line2": null,
         "postalCode": "K2T 1B6",
         "formattedAddress": "200 Earl Grey Dr Ottawa, Ontario K2T 1B6"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "1021SD1333",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart Queen Street East",
-      "storeId": "1021",
-      "storeBannerId": "loblaw",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 16,
-      "partner": null,
-      "visible": false,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.6557731,
-        "longitude": -79.364718
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Toronto",
-        "line1": "351 Queen St E",
-        "line2": null,
-        "postalCode": "M5A 1T2",
-        "formattedAddress": "351 Queen St E Toronto, Ontario M5A 1T2"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "1021CR",
-      "contactNumber": "4166940687",
-      "name": "Location closing April 25th - Consumers Road",
-      "storeId": "1021",
-      "storeBannerId": "loblaw",
-      "locationType": "SPOKE",
-      "pickupType": "TRUCK",
-      "bufferTimeInHours": 12,
-      "partner": null,
-      "visible": false,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.7717637,
-        "longitude": -79.335559
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "North York",
-        "line1": "211 Consumers Rd",
-        "line2": null,
-        "postalCode": "M2J 4W8",
-        "formattedAddress": "211 Consumers Rd North York, Ontario M2J 4W8"
       },
       "timeZone": "EST5EDT",
       "features": []
@@ -5693,62 +4569,6 @@
       "features": []
     },
     {
-      "id": "1032SD1308",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart Wismer Commons",
-      "storeId": "1032",
-      "storeBannerId": "loblaw",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 16,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.900535,
-        "longitude": -79.266646
-      },
-      "address": {
-        "country": null,
-        "region": "Ontario",
-        "town": "Markham",
-        "line1": "G, 1730 Bur Oak Ave",
-        "line2": null,
-        "postalCode": "L6E 0H8",
-        "formattedAddress": "G, 1730 Bur Oak Ave Markham, Ontario L6E 0H8"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "1001SD1399",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart Rylander & Kingston",
-      "storeId": "1001",
-      "storeBannerId": "loblaw",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 15,
-      "partner": null,
-      "visible": false,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.7970918,
-        "longitude": -79.1517923
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Scarborough",
-        "line1": "91 Rylander Blvd #1022",
-        "line2": null,
-        "postalCode": "M1B 4X3",
-        "formattedAddress": "91 Rylander Blvd #1022 Scarborough, Ontario M1B 4X3"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
       "id": "1154",
       "contactNumber": "4165334078",
       "name": "Dundas & Bloor",
@@ -5800,62 +4620,6 @@
         "line2": null,
         "postalCode": "K2A 1H2",
         "formattedAddress": "2085 Carling Ave Ottawa, Ontario K2A 1H2"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "1021SD1351",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart Lower Jarvis",
-      "storeId": "1021",
-      "storeBannerId": "loblaw",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 14,
-      "partner": null,
-      "visible": false,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.6474371,
-        "longitude": -79.3718305
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Toronto",
-        "line1": "18 Lower Jarvis St",
-        "line2": null,
-        "postalCode": "M5E 1N1",
-        "formattedAddress": "18 Lower Jarvis St Toronto, Ontario M5E 1N1"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "1021SD0823",
-      "contactNumber": "8442958219",
-      "name": "Shoppers Drug Mart Queen & Carlaw",
-      "storeId": "1021",
-      "storeBannerId": "loblaw",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 12,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.661225,
-        "longitude": -79.340635
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Toronto",
-        "line1": "970 Queen St E",
-        "line2": null,
-        "postalCode": "M4M 1J8",
-        "formattedAddress": "970 Queen St E Toronto, Ontario M4M 1J8"
       },
       "timeZone": "EST5EDT",
       "features": []
@@ -6033,34 +4797,6 @@
       "features": []
     },
     {
-      "id": "1001SD1404",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart Longworth Avenue",
-      "storeId": "1001",
-      "storeBannerId": "loblaw",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 15,
-      "partner": null,
-      "visible": false,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.9303254,
-        "longitude": -78.6920981
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Bowmanville",
-        "line1": "570 Longworth Ave",
-        "line2": null,
-        "postalCode": "L1C 0H4",
-        "formattedAddress": "570 Longworth Ave Bowmanville, Ontario L1C 0H4"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
       "id": "1014",
       "contactNumber": "6137442003",
       "name": "McArthur Avenue",
@@ -6084,34 +4820,6 @@
         "line2": null,
         "postalCode": "K1L 8H5",
         "formattedAddress": "100 McArthur Rd Ottawa, Ontario K1L 8H5"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "1032SD0843",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart Steeles Heights Plaza",
-      "storeId": "1032",
-      "storeBannerId": "loblaw",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 14,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.8053936,
-        "longitude": -79.386761
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "North York",
-        "line1": "1515 Steeles Avenue East",
-        "line2": null,
-        "postalCode": "M2M 3Y7",
-        "formattedAddress": "1515 Steeles Avenue East North York, Ontario M2M 3Y7"
       },
       "timeZone": "EST5EDT",
       "features": []
@@ -6425,34 +5133,6 @@
       "features": []
     },
     {
-      "id": "8686",
-      "contactNumber": "4504377162",
-      "name": "820 boul Cure-Labelle, Blainville",
-      "storeId": "8686",
-      "storeBannerId": "provigo",
-      "locationType": "STORE",
-      "pickupType": "STORE",
-      "bufferTimeInHours": 2,
-      "partner": null,
-      "visible": false,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 45.668954,
-        "longitude": -73.872971
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Quebec",
-        "town": "Blainville",
-        "line1": "820, boul. Cure-Labelle",
-        "line2": null,
-        "postalCode": "J7C 2K6",
-        "formattedAddress": "820, boul. Cure-Labelle Blainville, Quebec J7C 2K6"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
       "id": "8799",
       "contactNumber": "4182769777",
       "name": "224,  boul. St-Michel, Mistassini",
@@ -6560,34 +5240,6 @@
         "line2": null,
         "postalCode": "H1N 3W1",
         "formattedAddress": "7600, rue Sherbrooke E Montréal, Quebec H1N 3W1"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "8020",
-      "contactNumber": "4507631665",
-      "name": "235,  Route 338, Côteau-du-Lac",
-      "storeId": "8020",
-      "storeBannerId": "provigo",
-      "locationType": "STORE",
-      "pickupType": "STORE",
-      "bufferTimeInHours": 2,
-      "partner": null,
-      "visible": false,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 45.29715,
-        "longitude": -74.17829
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Quebec",
-        "town": "Côteau-du-Lac",
-        "line1": "235, rte. 338",
-        "line2": null,
-        "postalCode": "J0P 1B0",
-        "formattedAddress": "235, rte. 338 Côteau-du-Lac, Quebec J0P 1B0"
       },
       "timeZone": "EST5EDT",
       "features": []
@@ -7069,34 +5721,6 @@
       "features": []
     },
     {
-      "id": "8809",
-      "contactNumber": "4506383219",
-      "name": "31, rue Georges-Gagné, Delson",
-      "storeId": "8809",
-      "storeBannerId": "provigo",
-      "locationType": "STORE",
-      "pickupType": "STORE",
-      "bufferTimeInHours": 2,
-      "partner": null,
-      "visible": false,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 45.3835,
-        "longitude": -73.5505
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Quebec",
-        "town": "Delson",
-        "line1": "31, rue Georges-Gagné",
-        "line2": null,
-        "postalCode": "J5B 2E4",
-        "formattedAddress": "31, rue Georges-Gagné Delson, Quebec J5B 2E4"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
       "id": "8441",
       "contactNumber": "5144572321",
       "name": "90,  Chemin Morgan, Baie D`Urfé",
@@ -7512,34 +6136,6 @@
         "line2": null,
         "postalCode": "H3E 1J5",
         "formattedAddress": "42, pl. du Commerce Verdun, Quebec H3E 1J5"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "8528",
-      "contactNumber": "4507631665",
-      "name": "235,  Route 338, Côteau-du-Lac",
-      "storeId": "8528",
-      "storeBannerId": "provigo",
-      "locationType": "STORE",
-      "pickupType": "STORE",
-      "bufferTimeInHours": 2,
-      "partner": null,
-      "visible": false,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 45.29715,
-        "longitude": -74.17829
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Quebec",
-        "town": "Côteau-du-Lac",
-        "line1": "235, rte. 338",
-        "line2": null,
-        "postalCode": "J0P 1B0",
-        "formattedAddress": "235, rte. 338 Côteau-du-Lac, Quebec J0P 1B0"
       },
       "timeZone": "EST5EDT",
       "features": []
@@ -9869,62 +8465,6 @@
       "features": []
     },
     {
-      "id": "2809SD0855",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart Mclevin & Neilson",
-      "storeId": "2809",
-      "storeBannerId": "superstore",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 15,
-      "partner": null,
-      "visible": false,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.8092368,
-        "longitude": -79.2233699
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Scarborough",
-        "line1": "1400 Neilson Rd",
-        "line2": null,
-        "postalCode": "M1B 0C2",
-        "formattedAddress": "1400 Neilson Rd Scarborough, Ontario M1B 0C2"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "2800TTCHIP",
-      "contactNumber": "18442958219",
-      "name": "TTC High Park",
-      "storeId": "2800",
-      "storeBannerId": "superstore",
-      "locationType": "SPOKE",
-      "pickupType": "TRUCK",
-      "bufferTimeInHours": 5,
-      "partner": null,
-      "visible": false,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.6540008,
-        "longitude": -79.4688793
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Toronto",
-        "line1": "35 Quebec Ave",
-        "line2": null,
-        "postalCode": "M6P 2T3",
-        "formattedAddress": "35 Quebec Ave Toronto, Ontario M6P 2T3"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
       "id": "2841",
       "contactNumber": "9058968628",
       "name": "Mavis Road",
@@ -9948,34 +8488,6 @@
         "line2": null,
         "postalCode": "L5C 1T7",
         "formattedAddress": "3045 Mavis Rd Mississauga, Ontario L5C 1T7"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "2800TTCISL",
-      "contactNumber": "18442958219",
-      "name": "TTC Islington",
-      "storeId": "2800",
-      "storeBannerId": "superstore",
-      "locationType": "SPOKE",
-      "pickupType": "TRUCK",
-      "bufferTimeInHours": 5,
-      "partner": null,
-      "visible": false,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.6448664,
-        "longitude": -79.5239958
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Toronto",
-        "line1": "1226 Islington Ave",
-        "line2": null,
-        "postalCode": "M8X 1Y8",
-        "formattedAddress": "1226 Islington Ave Toronto, Ontario M8X 1Y8"
       },
       "timeZone": "EST5EDT",
       "features": []
@@ -10709,34 +9221,6 @@
       "features": []
     },
     {
-      "id": "1030SD1415",
-      "contactNumber": "8442958219",
-      "name": "Shoppers Drug Mart King City",
-      "storeId": "1030",
-      "storeBannerId": "superstore",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 5,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.9300722,
-        "longitude": -79.5254075
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "King City",
-        "line1": "2140 King Rd",
-        "line2": null,
-        "postalCode": "L7B 1L5",
-        "formattedAddress": "2140 King Rd King City, Ontario L7B 1L5"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
       "id": "1585",
       "contactNumber": "3065461448",
       "name": "Rochdale Boulevard",
@@ -10790,34 +9274,6 @@
         "formattedAddress": "19800 Lougheed Hwy Suite 201 Pitt Meadows, British Columbia V3Y 2W1"
       },
       "timeZone": "PST8PDT",
-      "features": []
-    },
-    {
-      "id": "1030SD0961",
-      "contactNumber": "8442958219",
-      "name": "Shoppers Drug Mart Main Street & Stouffville",
-      "storeId": "1030",
-      "storeBannerId": "superstore",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 5,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.9682162,
-        "longitude": -79.2669516
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Stouffville",
-        "line1": "5710 Main St",
-        "line2": null,
-        "postalCode": "L4A 8A9",
-        "formattedAddress": "5710 Main St Stouffville, Ontario L4A 8A9"
-      },
-      "timeZone": "EST5EDT",
       "features": []
     },
     {
@@ -11045,34 +9501,6 @@
       "features": []
     },
     {
-      "id": "2809SD0877",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart Leslie & York Mills",
-      "storeId": "2809",
-      "storeBannerId": "superstore",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 14,
-      "partner": null,
-      "visible": false,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.7546845,
-        "longitude": -79.361082
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "North York",
-        "line1": "1859 Leslie St",
-        "line2": null,
-        "postalCode": "M3B 2M1",
-        "formattedAddress": "1859 Leslie St North York, Ontario M3B 2M1"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
       "id": "1546",
       "contactNumber": "5875383740",
       "name": "McKenzie",
@@ -11215,34 +9643,6 @@
       "features": [
         "SHOP_AND_GO"
       ]
-    },
-    {
-      "id": "2810SG",
-      "contactNumber": "8002962332",
-      "name": "Liberty Village Shop & Scan",
-      "storeId": "2810",
-      "storeBannerId": "superstore",
-      "locationType": "SPOKE",
-      "pickupType": "TRUCK",
-      "bufferTimeInHours": 6,
-      "partner": null,
-      "visible": false,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.638312,
-        "longitude": -79.420357
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Toronto",
-        "line1": "Corner of Pirandello & East Liberty",
-        "line2": null,
-        "postalCode": "M6K 3R7",
-        "formattedAddress": "Corner of Pirandello & East Liberty Toronto, Ontario M6K 3R7"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
     },
     {
       "id": "1505",
@@ -11497,34 +9897,6 @@
       "features": []
     },
     {
-      "id": "1030SD0970",
-      "contactNumber": "8442958219",
-      "name": "Shoppers Drug Mart Aurora",
-      "storeId": "1030",
-      "storeBannerId": "superstore",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 5,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.9874805,
-        "longitude": -79.4659852
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Aurora",
-        "line1": "14729 Yonge St",
-        "line2": null,
-        "postalCode": "L4G 1N1",
-        "formattedAddress": "14729 Yonge St Aurora, Ontario L4G 1N1"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
       "id": "1550",
       "contactNumber": "4035042895",
       "name": "Medicine Hat",
@@ -11581,34 +9953,6 @@
       "features": []
     },
     {
-      "id": "1030SD0928",
-      "contactNumber": "8442958219",
-      "name": "Shoppers Drug Mart Oak Ridges",
-      "storeId": "1030",
-      "storeBannerId": "superstore",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 5,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.9460727,
-        "longitude": -79.4580741
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Richmond Hill",
-        "line1": "13070 Yonge St",
-        "line2": null,
-        "postalCode": "L4E 2T2",
-        "formattedAddress": "13070 Yonge St Richmond Hill, Ontario L4E 2T2"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
       "id": "1582",
       "contactNumber": "3067861961",
       "name": "Yorkton",
@@ -11634,34 +9978,6 @@
         "formattedAddress": "206 Broadway St E Yorkton, Saskatchewan S3N 3K4"
       },
       "timeZone": "Canada/Central",
-      "features": []
-    },
-    {
-      "id": "1030SD0955",
-      "contactNumber": "8442958219",
-      "name": "Shoppers Drug Mart Doane Hall - TEMPORARILY UNAVAILABLE",
-      "storeId": "1030",
-      "storeBannerId": "superstore",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 5,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 44.0034837,
-        "longitude": -79.4717862
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Aurora",
-        "line1": "15408 Yonge St",
-        "line2": null,
-        "postalCode": "L4G 1N9",
-        "formattedAddress": "15408 Yonge St Aurora, Ontario L4G 1N9"
-      },
-      "timeZone": "EST5EDT",
       "features": []
     },
     {
@@ -12423,34 +10739,6 @@
       "features": []
     },
     {
-      "id": "1033TTCFCH",
-      "contactNumber": "18442958219",
-      "name": "TTC Finch",
-      "storeId": "1033",
-      "storeBannerId": "superstore",
-      "locationType": "SPOKE",
-      "pickupType": "TRUCK",
-      "bufferTimeInHours": 5,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.7814156,
-        "longitude": -79.4173465
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "North York",
-        "line1": "16 Hendon Ave",
-        "line2": null,
-        "postalCode": "M2M 1T5",
-        "formattedAddress": "16 Hendon Ave North York, Ontario M2M 1T5"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
       "id": "1583",
       "contactNumber": "3066924494",
       "name": "Moose Jaw",
@@ -12504,34 +10792,6 @@
         "formattedAddress": "591-15th St E Prince Albert, Saskatchewan S6V 1G3"
       },
       "timeZone": "Canada/Central",
-      "features": []
-    },
-    {
-      "id": "2809SD1214",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart Eglinton & Dufferin",
-      "storeId": "2809",
-      "storeBannerId": "superstore",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 14,
-      "partner": null,
-      "visible": false,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.6957384,
-        "longitude": -79.4514148
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "York",
-        "line1": "1840 Eglinton Ave W",
-        "line2": null,
-        "postalCode": "M6E 2J4",
-        "formattedAddress": "1840 Eglinton Ave W York, Ontario M6E 2J4"
-      },
-      "timeZone": "EST5EDT",
       "features": []
     },
     {
@@ -13011,34 +11271,6 @@
       "features": []
     },
     {
-      "id": "2809SD1509",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart Sheppard & Victoria Park",
-      "storeId": "2809",
-      "storeBannerId": "superstore",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 15,
-      "partner": null,
-      "visible": false,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.7750852,
-        "longitude": -79.3230739
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Scarborough",
-        "line1": "2901 Sheppard Ave E",
-        "line2": null,
-        "postalCode": "M1T 3J3",
-        "formattedAddress": "2901 Sheppard Ave E Scarborough, Ontario M1T 3J3"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
       "id": "1091",
       "contactNumber": "5194350997",
       "name": "Oxford and Gammage",
@@ -13120,34 +11352,6 @@
         "formattedAddress": "5858 Signal Hill Ctr SW Calgary, Alberta T3H 3P8"
       },
       "timeZone": "MST7MDT",
-      "features": []
-    },
-    {
-      "id": "2809SD0838",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart Bathurst & Invermay",
-      "storeId": "2809",
-      "storeBannerId": "superstore",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 15,
-      "partner": null,
-      "visible": false,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.7410839,
-        "longitude": -79.4370234
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "North York",
-        "line1": "3874 Bathurst St",
-        "line2": null,
-        "postalCode": "M3H 3N3",
-        "formattedAddress": "3874 Bathurst St North York, Ontario M3H 3N3"
-      },
-      "timeZone": "EST5EDT",
       "features": []
     },
     {
@@ -13342,230 +11546,6 @@
         "line2": null,
         "postalCode": "M3J 3N4",
         "formattedAddress": "51 Gerry Fitzgerald Dr Toronto, Ontario M3J 3N4"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "2809SD0917",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart Nymark Plaza",
-      "storeId": "2809",
-      "storeBannerId": "superstore",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 14,
-      "partner": null,
-      "visible": false,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.7792663,
-        "longitude": -79.3668322
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "North York",
-        "line1": "4865 Leslie St",
-        "line2": null,
-        "postalCode": "M2J 2K8",
-        "formattedAddress": "4865 Leslie St North York, Ontario M2J 2K8"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "2801PCP001",
-      "contactNumber": "18442958219",
-      "name": "1PCC Real Canadian Superstore Self-Serve",
-      "storeId": "2801",
-      "storeBannerId": "superstore",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 5,
-      "partner": null,
-      "visible": false,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.6185201,
-        "longitude": -79.7688961
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Brampton",
-        "line1": "President's Choice Circle",
-        "line2": "1",
-        "postalCode": "L6Y 5S5",
-        "formattedAddress": "President's Choice Circle 1 Brampton, Ontario L6Y 5S5"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "2800TTCHIP",
-      "contactNumber": "18442958219",
-      "name": "TTC High Park",
-      "storeId": "2800",
-      "storeBannerId": "superstore",
-      "locationType": "SPOKE",
-      "pickupType": "TRUCK",
-      "bufferTimeInHours": 5,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.654109,
-        "longitude": -79.466401
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Toronto",
-        "line1": "35 Quebec Ave",
-        "line2": null,
-        "postalCode": "M6P 2T3",
-        "formattedAddress": "35 Quebec Ave Toronto, Ontario M6P 2T3"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "2800SF0001",
-      "contactNumber": "18442958219",
-      "name": "PC Express Marine Parade",
-      "storeId": "2800",
-      "storeBannerId": "superstore",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 3,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.625107,
-        "longitude": -79.477574
-      },
-      "address": {
-        "country": "Canada",
-        "region": null,
-        "town": "Etobicoke",
-        "line1": "110 Marine Parade Drive",
-        "line2": null,
-        "postalCode": "M8V 0B6",
-        "formattedAddress": "110 Marine Parade Drive Etobicoke, null M8V 0B6"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "1030SD1220",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart McCowan & Bur Oak",
-      "storeId": "1030",
-      "storeBannerId": "superstore",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 8,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.894337,
-        "longitude": -79.291725
-      },
-      "address": {
-        "country": null,
-        "region": "Ontario",
-        "town": "Markham",
-        "line1": "9620 McCowan Rd",
-        "line2": null,
-        "postalCode": "L3P 8M1",
-        "formattedAddress": "9620 McCowan Rd Markham, Ontario L3P 8M1"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "1030SD0613",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart Highway 7",
-      "storeId": "1030",
-      "storeBannerId": "superstore",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 8,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.878075,
-        "longitude": -79.23896
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Markham",
-        "line1": "6579 Hwy 7",
-        "line2": null,
-        "postalCode": "L3P 3B4",
-        "formattedAddress": "6579 Hwy 7 Markham, Ontario L3P 3B4"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "1030SD1220",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart McCowan & Bur Oak",
-      "storeId": "1030",
-      "storeBannerId": "superstore",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 8,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.894337,
-        "longitude": -79.291725
-      },
-      "address": {
-        "country": null,
-        "region": "Ontario",
-        "town": "Markham",
-        "line1": "9620 McCowan Rd",
-        "line2": null,
-        "postalCode": "L3P 8M1",
-        "formattedAddress": "9620 McCowan Rd Markham, Ontario L3P 8M1"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "1030SD0613",
-      "contactNumber": "18442958219",
-      "name": "Shoppers Drug Mart Highway 7",
-      "storeId": "1030",
-      "storeBannerId": "superstore",
-      "locationType": "SPOKE",
-      "pickupType": "SELF_SERVE_LIGHT",
-      "bufferTimeInHours": 8,
-      "partner": null,
-      "visible": true,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.878075,
-        "longitude": -79.23896
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Markham",
-        "line1": "6579 Hwy 7",
-        "line2": null,
-        "postalCode": "L3P 3B4",
-        "formattedAddress": "6579 Hwy 7 Markham, Ontario L3P 3B4"
       },
       "timeZone": "EST5EDT",
       "features": []
@@ -18415,258 +16395,6 @@
       "features": []
     },
     {
-      "id": "3991",
-      "contactNumber": "",
-      "name": "Justin’s NOFRILLS Winnipeg",
-      "storeId": "3991",
-      "storeBannerId": "nofrills",
-      "locationType": "STORE",
-      "pickupType": "STORE",
-      "bufferTimeInHours": 0,
-      "partner": null,
-      "visible": true,
-      "isShoppable": false,
-      "geoPoint": {
-        "latitude": 49.821994,
-        "longitude": -97.084391
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Manitoba",
-        "town": "Winnipeg",
-        "line1": "740 St. Anne’s Rd",
-        "line2": "",
-        "postalCode": "R2N 0A2",
-        "formattedAddress": "740 St. Anne’s Rd  Winnipeg, Manitoba R2N 0A2"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "0270",
-      "contactNumber": "4167443385",
-      "name": "Sheriff's NOFRILLS Etobicoke",
-      "storeId": "0270",
-      "storeBannerId": "nofrills",
-      "locationType": "STORE",
-      "pickupType": "SELF_SERVE_FULL",
-      "bufferTimeInHours": 16,
-      "partner": null,
-      "visible": true,
-      "isShoppable": false,
-      "geoPoint": {
-        "latitude": 43.74161,
-        "longitude": -79.58358
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Etobicoke",
-        "line1": "1530 Albion Rd",
-        "line2": "",
-        "postalCode": "M9V 1B4",
-        "formattedAddress": "1530 Albion Rd  Etobicoke, Ontario M9V 1B4"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "1336",
-      "contactNumber": "7057370389",
-      "name": "Joe's NOFRILLS Barrie",
-      "storeId": "1336",
-      "storeBannerId": "nofrills",
-      "locationType": "STORE",
-      "pickupType": "SELF_SERVE_FULL",
-      "bufferTimeInHours": 16,
-      "partner": null,
-      "visible": true,
-      "isShoppable": false,
-      "geoPoint": {
-        "latitude": 44.386974,
-        "longitude": -79.705146
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Barrie",
-        "line1": "165 Wellington St W",
-        "line2": "",
-        "postalCode": "L4N 1L7",
-        "formattedAddress": "165 Wellington St W  Barrie, Ontario L4N 1L7"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "3991",
-      "contactNumber": "",
-      "name": "Justin’s NOFRILLS Winnipeg",
-      "storeId": "3991",
-      "storeBannerId": "nofrills",
-      "locationType": "STORE",
-      "pickupType": "STORE",
-      "bufferTimeInHours": 0,
-      "partner": null,
-      "visible": true,
-      "isShoppable": false,
-      "geoPoint": {
-        "latitude": 49.821994,
-        "longitude": -97.084391
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Manitoba",
-        "town": "Winnipeg",
-        "line1": "740 St. Anne’s Rd",
-        "line2": "",
-        "postalCode": "R2N 0A2",
-        "formattedAddress": "740 St. Anne’s Rd  Winnipeg, Manitoba R2N 0A2"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "0270",
-      "contactNumber": "4167443385",
-      "name": "Sheriff's NOFRILLS Etobicoke",
-      "storeId": "0270",
-      "storeBannerId": "nofrills",
-      "locationType": "STORE",
-      "pickupType": "SELF_SERVE_FULL",
-      "bufferTimeInHours": 16,
-      "partner": null,
-      "visible": true,
-      "isShoppable": false,
-      "geoPoint": {
-        "latitude": 43.74161,
-        "longitude": -79.58358
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Etobicoke",
-        "line1": "1530 Albion Rd",
-        "line2": "",
-        "postalCode": "M9V 1B4",
-        "formattedAddress": "1530 Albion Rd  Etobicoke, Ontario M9V 1B4"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "1336",
-      "contactNumber": "7057370389",
-      "name": "Joe's NOFRILLS Barrie",
-      "storeId": "1336",
-      "storeBannerId": "nofrills",
-      "locationType": "STORE",
-      "pickupType": "SELF_SERVE_FULL",
-      "bufferTimeInHours": 16,
-      "partner": null,
-      "visible": true,
-      "isShoppable": false,
-      "geoPoint": {
-        "latitude": 44.386974,
-        "longitude": -79.705146
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Barrie",
-        "line1": "165 Wellington St W",
-        "line2": "",
-        "postalCode": "L4N 1L7",
-        "formattedAddress": "165 Wellington St W  Barrie, Ontario L4N 1L7"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "3991",
-      "contactNumber": "",
-      "name": "Justin’s NOFRILLS Winnipeg",
-      "storeId": "3991",
-      "storeBannerId": "nofrills",
-      "locationType": "STORE",
-      "pickupType": "STORE",
-      "bufferTimeInHours": 0,
-      "partner": null,
-      "visible": true,
-      "isShoppable": false,
-      "geoPoint": {
-        "latitude": 49.821994,
-        "longitude": -97.084391
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Manitoba",
-        "town": "Winnipeg",
-        "line1": "740 St. Anne’s Rd",
-        "line2": "",
-        "postalCode": "R2N 0A2",
-        "formattedAddress": "740 St. Anne’s Rd  Winnipeg, Manitoba R2N 0A2"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "0270",
-      "contactNumber": "4167443385",
-      "name": "Sheriff's NOFRILLS Etobicoke",
-      "storeId": "0270",
-      "storeBannerId": "nofrills",
-      "locationType": "STORE",
-      "pickupType": "SELF_SERVE_FULL",
-      "bufferTimeInHours": 16,
-      "partner": null,
-      "visible": true,
-      "isShoppable": false,
-      "geoPoint": {
-        "latitude": 43.74161,
-        "longitude": -79.58358
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Etobicoke",
-        "line1": "1530 Albion Rd",
-        "line2": "",
-        "postalCode": "M9V 1B4",
-        "formattedAddress": "1530 Albion Rd  Etobicoke, Ontario M9V 1B4"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "1336",
-      "contactNumber": "7057370389",
-      "name": "Joe's NOFRILLS Barrie",
-      "storeId": "1336",
-      "storeBannerId": "nofrills",
-      "locationType": "STORE",
-      "pickupType": "SELF_SERVE_FULL",
-      "bufferTimeInHours": 16,
-      "partner": null,
-      "visible": true,
-      "isShoppable": false,
-      "geoPoint": {
-        "latitude": 44.386974,
-        "longitude": -79.705146
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Barrie",
-        "line1": "165 Wellington St W",
-        "line2": "",
-        "postalCode": "L4N 1L7",
-        "formattedAddress": "165 Wellington St W  Barrie, Ontario L4N 1L7"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
       "id": "3041",
       "contactNumber": "18442958219",
       "name": "Chris' NOFRILLS Fort Saskatchewan",
@@ -18774,34 +16502,6 @@
         "line2": null,
         "postalCode": "M5T 1S2",
         "formattedAddress": "301 College St Toronto, Ontario M5T 1S2"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "2960",
-      "contactNumber": null,
-      "name": "Real Canadian Wholesale Club - Souris Avenue - Gas Bar",
-      "storeId": "2960",
-      "storeBannerId": "wholesaleclub",
-      "locationType": "STORE",
-      "pickupType": "STORE",
-      "bufferTimeInHours": 0,
-      "partner": null,
-      "visible": true,
-      "isShoppable": false,
-      "geoPoint": {
-        "latitude": 49.66269,
-        "longitude": -103.8598
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Saskatchewan",
-        "town": "Weyburn",
-        "line1": "115 Souris Avenue",
-        "line2": null,
-        "postalCode": "S4H 3N6",
-        "formattedAddress": "115 Souris Avenue Weyburn, Saskatchewan S4H 3N6"
       },
       "timeZone": "EST5EDT",
       "features": []
@@ -18957,34 +16657,6 @@
       ]
     },
     {
-      "id": "2934",
-      "contactNumber": null,
-      "name": "Real Canadian Wholesale Club - South Lakeside Drive - Gas Bar",
-      "storeId": "2934",
-      "storeBannerId": "wholesaleclub",
-      "locationType": "STORE",
-      "pickupType": "STORE",
-      "bufferTimeInHours": 0,
-      "partner": null,
-      "visible": true,
-      "isShoppable": false,
-      "geoPoint": {
-        "latitude": 52.1169,
-        "longitude": -122.1317
-      },
-      "address": {
-        "country": "Canada",
-        "region": "British Columbia",
-        "town": "Williams Lake",
-        "line1": "1000 South Lakeside Drive",
-        "line2": null,
-        "postalCode": "V2G 3A6",
-        "formattedAddress": "1000 South Lakeside Drive Williams Lake, British Columbia V2G 3A6"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
       "id": "6734",
       "contactNumber": null,
       "name": "Wholesale Club South Lakeside Drive",
@@ -19075,34 +16747,6 @@
       ]
     },
     {
-      "id": "2905",
-      "contactNumber": null,
-      "name": "Real Canadian Wholesale Club - North Service RD - Gas Bar",
-      "storeId": "2905",
-      "storeBannerId": "wholesaleclub",
-      "locationType": "STORE",
-      "pickupType": "STORE",
-      "bufferTimeInHours": 0,
-      "partner": null,
-      "visible": false,
-      "isShoppable": false,
-      "geoPoint": {
-        "latitude": 50.30459,
-        "longitude": -107.7823
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Saskatchewan",
-        "town": "Swift Current",
-        "line1": "1501 North Service Rd East",
-        "line2": null,
-        "postalCode": "S9H 4X7",
-        "formattedAddress": "1501 North Service Rd East Swift Current, Saskatchewan S9H 4X7"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
       "id": "0226",
       "contactNumber": "7056733606",
       "name": "Sudbury",
@@ -19131,34 +16775,6 @@
       "features": [
         "SHOP_AND_GO"
       ]
-    },
-    {
-      "id": "2917",
-      "contactNumber": null,
-      "name": "Real Canadian Wholesale Club - 46th Street - Gas Bar",
-      "storeId": "2917",
-      "storeBannerId": "wholesaleclub",
-      "locationType": "STORE",
-      "pickupType": "STORE",
-      "bufferTimeInHours": 0,
-      "partner": null,
-      "visible": true,
-      "isShoppable": false,
-      "geoPoint": {
-        "latitude": 54.2697,
-        "longitude": -110.7294
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Alberta",
-        "town": "Bonnyville",
-        "line1": "5101 46th Street",
-        "line2": null,
-        "postalCode": "T9N 2P1",
-        "formattedAddress": "5101 46th Street Bonnyville, Alberta T9N 2P1"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
     },
     {
       "id": "0399",
@@ -19309,34 +16925,6 @@
       "features": [
         "SHOP_AND_GO"
       ]
-    },
-    {
-      "id": "0253",
-      "contactNumber": null,
-      "name": "NG Cash and Carry - St. Catharines",
-      "storeId": "0253",
-      "storeBannerId": "wholesaleclub",
-      "locationType": "STORE",
-      "pickupType": "STORE",
-      "bufferTimeInHours": 0,
-      "partner": null,
-      "visible": true,
-      "isShoppable": false,
-      "geoPoint": {
-        "latitude": 43.16919,
-        "longitude": -79.2102
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "St. Catharines",
-        "line1": "189 Bunting Road",
-        "line2": null,
-        "postalCode": "L2M 3Y2",
-        "formattedAddress": "189 Bunting Road St. Catharines, Ontario L2M 3Y2"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
     },
     {
       "id": "6714",
@@ -19579,62 +17167,6 @@
       ]
     },
     {
-      "id": "2928",
-      "contactNumber": null,
-      "name": "Real Canadian Wholesale Club - Feeney Avenue - Gas Bar",
-      "storeId": "2928",
-      "storeBannerId": "wholesaleclub",
-      "locationType": "STORE",
-      "pickupType": "STORE",
-      "bufferTimeInHours": 0,
-      "partner": null,
-      "visible": true,
-      "isShoppable": false,
-      "geoPoint": {
-        "latitude": 54.51228,
-        "longitude": -128.5826
-      },
-      "address": {
-        "country": "Canada",
-        "region": "British Columbia",
-        "town": "Terrace",
-        "line1": "4524 Feeney Avenue",
-        "line2": null,
-        "postalCode": "V8G 1J2",
-        "formattedAddress": "4524 Feeney Avenue Terrace, British Columbia V8G 1J2"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
-      "id": "2933",
-      "contactNumber": null,
-      "name": "Real Canadian Wholesale Club - Highway 16 West - Gas Bar",
-      "storeId": "2933",
-      "storeBannerId": "wholesaleclub",
-      "locationType": "STORE",
-      "pickupType": "STORE",
-      "bufferTimeInHours": 0,
-      "partner": null,
-      "visible": true,
-      "isShoppable": false,
-      "geoPoint": {
-        "latitude": 54.22761,
-        "longitude": -125.7608
-      },
-      "address": {
-        "country": "Canada",
-        "region": "British Columbia",
-        "town": "Burns Lake",
-        "line1": "201 Highway 16 West",
-        "line2": null,
-        "postalCode": "V0J 1E0",
-        "formattedAddress": "201 Highway 16 West Burns Lake, British Columbia V0J 1E0"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
       "id": "0245",
       "contactNumber": null,
       "name": "Ottawa",
@@ -19753,34 +17285,6 @@
       "features": [
         "SHOP_AND_GO"
       ]
-    },
-    {
-      "id": "2926",
-      "contactNumber": null,
-      "name": "Real Canadian Wholesale Club - Carmi Avenue - Gas Bar",
-      "storeId": "2926",
-      "storeBannerId": "wholesaleclub",
-      "locationType": "STORE",
-      "pickupType": "STORE",
-      "bufferTimeInHours": 0,
-      "partner": null,
-      "visible": false,
-      "isShoppable": false,
-      "geoPoint": {
-        "latitude": 49.48257,
-        "longitude": -119.585069
-      },
-      "address": {
-        "country": "Canada",
-        "region": "British Columbia",
-        "town": "Penticton",
-        "line1": "1502 Main Street",
-        "line2": null,
-        "postalCode": "V2A 5G6",
-        "formattedAddress": "1502 Main Street Penticton, British Columbia V2A 5G6"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
     },
     {
       "id": "8240",
@@ -19931,34 +17435,6 @@
       "features": [
         "SHOP_AND_GO"
       ]
-    },
-    {
-      "id": "245",
-      "contactNumber": null,
-      "name": "Wholesale Club - Ottawa",
-      "storeId": "0245",
-      "storeBannerId": "wholesaleclub",
-      "locationType": "STORE",
-      "pickupType": "STORE",
-      "bufferTimeInHours": 360,
-      "partner": null,
-      "visible": false,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 45.42,
-        "longitude": -75.619
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Ottawa",
-        "line1": "1435 Cyrville Rd",
-        "line2": null,
-        "postalCode": "K1B 3L7",
-        "formattedAddress": "1435 Cyrville Rd Ottawa, Ontario K1B 3L7"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
     },
     {
       "id": "0210",
@@ -20171,34 +17647,6 @@
       ]
     },
     {
-      "id": "2947",
-      "contactNumber": null,
-      "name": "Real Canadian Wholesale Club - 10th Ave. South - Gas Bar",
-      "storeId": "2947",
-      "storeBannerId": "wholesaleclub",
-      "locationType": "STORE",
-      "pickupType": "STORE",
-      "bufferTimeInHours": 0,
-      "partner": null,
-      "visible": true,
-      "isShoppable": false,
-      "geoPoint": {
-        "latitude": 49.769265,
-        "longitude": -94.473797
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Kenora",
-        "line1": "#16 10th Avenue South",
-        "line2": null,
-        "postalCode": "P9N 2J4",
-        "formattedAddress": "#16 10th Avenue South Kenora, Ontario P9N 2J4"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
       "id": "6720",
       "contactNumber": null,
       "name": "Kenora",
@@ -20227,34 +17675,6 @@
       "features": [
         "SHOP_AND_GO"
       ]
-    },
-    {
-      "id": "202",
-      "contactNumber": null,
-      "name": "Wholesale Club - Hamilton",
-      "storeId": "0202",
-      "storeBannerId": "wholesaleclub",
-      "locationType": "STORE",
-      "pickupType": "STORE",
-      "bufferTimeInHours": 24,
-      "partner": null,
-      "visible": false,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.24,
-        "longitude": -79.771
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Hamilton",
-        "line1": "2255 Barton St E",
-        "line2": null,
-        "postalCode": "L8H 7T4",
-        "formattedAddress": "2255 Barton St E Hamilton, Ontario L8H 7T4"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
     },
     {
       "id": "6760",
@@ -20437,34 +17857,6 @@
       ]
     },
     {
-      "id": "212",
-      "contactNumber": null,
-      "name": "Wholesale Club - Mississauga",
-      "storeId": "0212",
-      "storeBannerId": "wholesaleclub",
-      "locationType": "STORE",
-      "pickupType": "STORE",
-      "bufferTimeInHours": 24,
-      "partner": null,
-      "visible": false,
-      "isShoppable": true,
-      "geoPoint": {
-        "latitude": 43.583,
-        "longitude": -79.638
-      },
-      "address": {
-        "country": "Canada",
-        "region": "Ontario",
-        "town": "Mississauga",
-        "line1": "325 Central Parkway W",
-        "line2": null,
-        "postalCode": "L5B 3X9",
-        "formattedAddress": "325 Central Parkway W Mississauga, Ontario L5B 3X9"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
       "id": "0211",
       "contactNumber": null,
       "name": "Whitby",
@@ -20523,34 +17915,6 @@
       "features": [
         "SHOP_AND_GO"
       ]
-    },
-    {
-      "id": "0346",
-      "contactNumber": null,
-      "name": "Sydney",
-      "storeId": "0346",
-      "storeBannerId": "wholesaleclub",
-      "locationType": "STORE",
-      "pickupType": "STORE",
-      "bufferTimeInHours": 12,
-      "partner": null,
-      "visible": false,
-      "isShoppable": false,
-      "geoPoint": {
-        "latitude": 46.142282,
-        "longitude": -60.161756
-      },
-      "address": {
-        "country": "Canada",
-        "region": null,
-        "town": "Sydney",
-        "line1": "333 Welton St",
-        "line2": null,
-        "postalCode": "B1P 5S4",
-        "formattedAddress": "333 Welton St Sydney, null B1P 5S4"
-      },
-      "timeZone": "Canada/Atlantic",
-      "features": []
     },
     {
       "id": "6710",
@@ -20703,34 +18067,6 @@
       ]
     },
     {
-      "id": "8461",
-      "contactNumber": null,
-      "name": "8350 rue Jeanne Mance, Montréal",
-      "storeId": "8461",
-      "storeBannerId": "wholesaleclub",
-      "locationType": "STORE",
-      "pickupType": "STORE",
-      "bufferTimeInHours": 15,
-      "partner": null,
-      "visible": false,
-      "isShoppable": false,
-      "geoPoint": {
-        "latitude": 45.534969,
-        "longitude": -73.639193
-      },
-      "address": {
-        "country": "Canada",
-        "region": null,
-        "town": "Montréal",
-        "line1": "8350, rue Jeanne-Mance",
-        "line2": null,
-        "postalCode": "H2P 2S3",
-        "formattedAddress": "8350, rue Jeanne-Mance Montréal, null H2P 2S3"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
-    },
-    {
       "id": "6711",
       "contactNumber": null,
       "name": "Regina",
@@ -20819,34 +18155,6 @@
       "features": [
         "SHOP_AND_GO"
       ]
-    },
-    {
-      "id": "2935",
-      "contactNumber": null,
-      "name": "Real Canadian Wholesale Club - Lakeside Drive - Gas Bar",
-      "storeId": "2935",
-      "storeBannerId": "wholesaleclub",
-      "locationType": "STORE",
-      "pickupType": "STORE",
-      "bufferTimeInHours": 0,
-      "partner": null,
-      "visible": true,
-      "isShoppable": false,
-      "geoPoint": {
-        "latitude": 49.49448,
-        "longitude": -117.2967
-      },
-      "address": {
-        "country": "Canada",
-        "region": "British Columbia",
-        "town": "Nelson",
-        "line1": "502 Lakeside Drive",
-        "line2": null,
-        "postalCode": "V1L 6B9",
-        "formattedAddress": "502 Lakeside Drive Nelson, British Columbia V1L 6B9"
-      },
-      "timeZone": "EST5EDT",
-      "features": []
     },
     {
       "id": "6716",

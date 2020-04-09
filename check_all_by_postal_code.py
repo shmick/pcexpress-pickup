@@ -40,13 +40,14 @@ geo_url_pri = "https://geocoder.ca/?geoit=xml&json=1&postal=" + postal_code
 geo_url_bak = "https://geogratis.gc.ca/services/geolocation/en/locate?q=" + postal_code
 
 geo_data = requests.get(geo_url_pri)
-geo_json = geo_data.json()
-if geo_json:
+# geocoder.ca can throttle requests. In this case, use the backup geolocation lookup.
+if geo_data.status_code == 200:
+    geo_json = geo_data.json()
     myLat = float(geo_json["latt"])
     myLong = float(geo_json["longt"])
     myLatLong = (myLat, myLong)
-if not geo_json:
-    geo_data = requests.get(geo_url_sec)
+else:
+    geo_data = requests.get(geo_url_bak)
     geo_json = geo_data.json()
     coords = geo_json[0]["geometry"]["coordinates"]
     myLat = coords[1]
@@ -95,20 +96,14 @@ store_urls = {
 
 
 def check_loblaws(store):
-    id = store["id"]
-
-    # CT =  ("Colleague Testing") test location entries
-    # SD = shoppers drugmart, no timeslots exist for SD yet
-    if "CT" in id or "SD" in id:
-        return
-
+    loc_id = store["id"]
     address = store["address"]["formattedAddress"]
     storeBannerId = store["storeBannerId"]
     distance = int(store["distance"])
 
     if mode == "report":
         print(
-            f"store: {storeBannerId}, location: {id}, address: {address}, approx {distance} KM away"
+            f"store: {storeBannerId}, location: {loc_id}, address: {address}, approx {distance} KM away"
         )
     else:
         base_url = store_urls[storeBannerId]
@@ -116,7 +111,7 @@ def check_loblaws(store):
             "Site-Banner": storeBannerId
         }  # If this header isn't set, the site returns an error
         # Using the base_url and headers, build the full URL
-        url = base_url + "/api/pickup-locations/" + id + "/time-slots"
+        url = base_url + "/api/pickup-locations/" + loc_id + "/time-slots"
         # Make the HTTP request
         r = requests.get(url, headers=headers)
         # Use the builtin JSON decoder
