@@ -1,3 +1,4 @@
+import os
 import sys
 import json
 import requests
@@ -34,25 +35,38 @@ try:
 except:
     mode = ""
 
-# Switch primary geo lookup to geocoder.ca as the results are more realiable
-geo_url_pri = "https://geocoder.ca/?geoit=xml&json=1&postal=" + postal_code
-# Use the NRC geo lookup service as a backup geo lookup
-geo_url_bak = "https://geogratis.gc.ca/services/geolocation/en/locate?q=" + postal_code
+myLat = os.environ.get("MYLAT")
+if myLat:
+    myLat = float(myLat)
+myLong = os.environ.get("MYLONG")
+if myLong:
+    myLong = float(myLong)
 
-geo_data = requests.get(geo_url_pri)
-# geocoder.ca can throttle requests. In this case, use the backup geolocation lookup.
-if geo_data.status_code == 200:
-    geo_json = geo_data.json()
-    myLat = float(geo_json["latt"])
-    myLong = float(geo_json["longt"])
-    myLatLong = (myLat, myLong)
-else:
-    geo_data = requests.get(geo_url_bak)
-    geo_json = geo_data.json()
-    coords = geo_json[0]["geometry"]["coordinates"]
-    myLat = coords[1]
-    myLong = coords[0]
-    myLatLong = (myLat, myLong)
+if not myLat or not myLong:
+    # Switch primary geo lookup to geocoder.ca as the results are more realiable
+    geo_url_pri = "https://geocoder.ca/?geoit=xml&json=1&postal=" + postal_code
+    # Use the NRC geo lookup service as a backup geo lookup
+    geo_url_bak = (
+        "https://geogratis.gc.ca/services/geolocation/en/locate?q=" + postal_code
+    )
+
+    geo_data = requests.get(geo_url_pri)
+    # geocoder.ca can throttle requests. In this case, use the backup geolocation lookup.
+    if geo_data.status_code == 200:
+        geo_json = geo_data.json()
+        myLat = float(geo_json["latt"])
+        myLong = float(geo_json["longt"])
+        # myLatLong = (myLat, myLong)
+    else:
+        geo_data = requests.get(geo_url_bak)
+        geo_json = geo_data.json()
+        coords = geo_json[0]["geometry"]["coordinates"]
+        myLat = coords[1]
+        myLong = coords[0]
+myLatLong = (myLat, myLong)
+
+if mode == "report":
+    print(f'export MYLAT="{myLat}" ; export MYLONG="{myLong}"')
 
 stores_to_check = []
 
