@@ -1,46 +1,64 @@
 import os
 import sys
 import json
+import argparse
 import requests
 import haversine
 from datetime import datetime
 from dateutil import tz
 from haversine import haversine, Unit
 
+
+my_parser = argparse.ArgumentParser()
+my_parser.add_argument("-p", "-postal", type=str, help="ex: m5w1e6")
+my_parser.add_argument("-lat", help="ex: 43.703344", type=float)
+my_parser.add_argument("-long", help="ex: -79.524619", type=float)
+my_parser.add_argument(
+    "-d", "-distance", help="Search distance in KM", default=5.0, type=float,
+)
+my_parser.add_argument(
+    "-r",
+    "-report",
+    action="store_true",
+    help="report lat + long and stores found within search distance. will not check available pickup times",
+)
+
+if len(sys.argv) == 1:
+    my_parser.print_help(sys.stderr)
+    sys.exit(1)
+
+args = my_parser.parse_args()
+
+postal_code = args.p
+myLat = args.lat
+myLong = args.long
+within_km = args.d
+report = args.r
+
+if not postal_code and not myLat and not myLong:
+    sys.exit(
+        "Either postal code (-p) or latitude (-lat) and longitude (-long) values are required. Use -h for help"
+    )
+
+if not postal_code:
+    if not myLat or not myLong:
+        sys.exit(
+            "Both latitude (-lat) and longitude (-long) values are required. Use -h for help"
+        )
+
+mode = None
+
+if report:
+    mode = "report"
+
 # f-strings requires python 3.6
 MIN_PYTHON = (3, 6)
 if sys.version_info < MIN_PYTHON:
     sys.exit("Python %s.%s or later is required.\n" % MIN_PYTHON)
 
-postal_code = sys.argv[1]
-
-if len(postal_code) < 3:
-    print("Please provide a postal code")
-    sys.exit(1)  # postal code required
 
 from_zone = tz.gettz("UTC")
 to_zone = tz.gettz("America/Toronto")
-
-default_search_km = 5
-
-try:
-    within_km = float(sys.argv[2])
-except:
-    within_km = float(default_search_km)
-
-
-try:
-    if sys.argv[2] == "report" or sys.argv[3] == "report":
-        mode = "report"
-except:
-    mode = ""
-
-myLat = os.environ.get("MYLAT")
-if myLat:
-    myLat = float(myLat)
-myLong = os.environ.get("MYLONG")
-if myLong:
-    myLong = float(myLong)
 
 if not myLat or not myLong:
     # Switch primary geo lookup to geocoder.ca as the results are more realiable
@@ -56,17 +74,17 @@ if not myLat or not myLong:
         geo_json = geo_data.json()
         myLat = float(geo_json["latt"])
         myLong = float(geo_json["longt"])
-        # myLatLong = (myLat, myLong)
     else:
         geo_data = requests.get(geo_url_bak)
         geo_json = geo_data.json()
         coords = geo_json[0]["geometry"]["coordinates"]
         myLat = coords[1]
         myLong = coords[0]
+
 myLatLong = (myLat, myLong)
 
 if mode == "report":
-    print(f'export MYLAT="{myLat}" ; export MYLONG="{myLong}"')
+    print(f"-lat {myLat} -long {myLong}")
 
 stores_to_check = []
 
@@ -113,12 +131,10 @@ def check_loblaws(store):
     loc_id = store["id"]
     address = store["address"]["formattedAddress"]
     storeBannerId = store["storeBannerId"]
-    distance = int(store["distance"])
+    distance = round(store["distance"], 1)
 
     if mode == "report":
-        print(
-            f"store: {storeBannerId}, location: {loc_id}, address: {address}, approx {distance} KM away"
-        )
+        print(f"{storeBannerId}, id: {loc_id}, {address}, approx {distance} KM away")
     else:
         base_url = store_urls[storeBannerId]
         headers = {
@@ -151,7 +167,7 @@ def check_loblaws(store):
 
         if pickup_times:
             count = pickup_times.count("\n")
-            output = f"{count} pickup times available at {storeBannerId} at {address} approx {distance} KM away"
+            output = f"{count} available at {storeBannerId} at {address} approx {distance} KM away"
             output += "\n"
             output += pickup_times
 
