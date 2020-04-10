@@ -22,6 +22,7 @@ my_parser.add_argument(
     action="store_true",
     help="report lat + long and stores found within search distance. will not check available pickup times",
 )
+my_parser.add_argument("-id", type=str, help="comma seperated store IDs ex: 1111,1122")
 
 if len(sys.argv) == 1:
     my_parser.print_help(sys.stderr)
@@ -34,17 +35,26 @@ myLat = args.lat
 myLong = args.long
 within_km = args.d
 report = args.r
+my_ids = args.id
 
-if not postal_code and not myLat and not myLong:
-    sys.exit(
-        "Either postal code (-p) or latitude (-lat) and longitude (-long) values are required. Use -h for help"
-    )
+if my_ids:
+    my_ids = my_ids.split(",")
+    # Set these to True to bypass geo lookups
+    myLat = True
+    myLong = True
 
-if not postal_code:
-    if not myLat or not myLong:
+# If store ids are give, no need to worry about postal codes or lat/lot
+else:
+    if not postal_code and not myLat and not myLong:
         sys.exit(
-            "Both latitude (-lat) and longitude (-long) values are required. Use -h for help"
+            "Either postal code (-p) or latitude (-lat) and longitude (-long) values are required. Use -h for help"
         )
+
+    if not postal_code:
+        if not myLat or not myLong:
+            sys.exit(
+                "Both latitude (-lat) and longitude (-long) values are required. Use -h for help"
+            )
 
 mode = None
 
@@ -60,26 +70,28 @@ if sys.version_info < MIN_PYTHON:
 from_zone = tz.gettz("UTC")
 to_zone = tz.gettz("America/Toronto")
 
-if not myLat or not myLong:
-    # Switch primary geo lookup to geocoder.ca as the results are more realiable
-    geo_url_pri = "https://geocoder.ca/?geoit=xml&json=1&postal=" + postal_code
-    # Use the NRC geo lookup service as a backup geo lookup
-    geo_url_bak = (
-        "https://geogratis.gc.ca/services/geolocation/en/locate?q=" + postal_code
-    )
 
-    geo_data = requests.get(geo_url_pri)
-    # geocoder.ca can throttle requests. In this case, use the backup geolocation lookup.
-    if geo_data.status_code == 200:
-        geo_json = geo_data.json()
-        myLat = float(geo_json["latt"])
-        myLong = float(geo_json["longt"])
-    else:
-        geo_data = requests.get(geo_url_bak)
-        geo_json = geo_data.json()
-        coords = geo_json[0]["geometry"]["coordinates"]
-        myLat = coords[1]
-        myLong = coords[0]
+if not my_ids:
+    if not myLat or not myLong:
+        # Switch primary geo lookup to geocoder.ca as the results are more realiable
+        geo_url_pri = "https://geocoder.ca/?geoit=xml&json=1&postal=" + postal_code
+        # Use the NRC geo lookup service as a backup geo lookup
+        geo_url_bak = (
+            "https://geogratis.gc.ca/services/geolocation/en/locate?q=" + postal_code
+        )
+
+        geo_data = requests.get(geo_url_pri)
+        # geocoder.ca can throttle requests. In this case, use the backup geolocation lookup.
+        if geo_data.status_code == 200:
+            geo_json = geo_data.json()
+            myLat = float(geo_json["latt"])
+            myLong = float(geo_json["longt"])
+        else:
+            geo_data = requests.get(geo_url_bak)
+            geo_json = geo_data.json()
+            coords = geo_json[0]["geometry"]["coordinates"]
+            myLat = coords[1]
+            myLong = coords[0]
 
 myLatLong = (myLat, myLong)
 
@@ -91,15 +103,26 @@ stores_to_check = []
 with open("locations.json") as inf:
     all_locs = json.load(inf)
 
-for loc in all_locs["locations"]:
-    locLatLong = (loc["geoPoint"]["latitude"], loc["geoPoint"]["longitude"])
-    distance = haversine(myLatLong, locLatLong)
-    if distance <= within_km:
-        # Add a distance key:value pair to the location object so that
-        # locations can be sorted by distance after the list is created
-        loc_distance = {"distance": distance}
-        loc.update(loc_distance)
-        stores_to_check.append(loc)
+# if store IDs are specified, no need to figure out stores based on distance
+if my_ids:
+    for ids in my_ids:
+        for loc in all_locs["locations"]:
+            store_id = loc["id"]
+            if ids == store_id:
+                # when using -id the distance to the store will be 0
+                loc_distance = {"distance": 0}
+                loc.update(loc_distance)
+                stores_to_check.append(loc)
+else:
+    for loc in all_locs["locations"]:
+        locLatLong = (loc["geoPoint"]["latitude"], loc["geoPoint"]["longitude"])
+        distance = haversine(myLatLong, locLatLong)
+        if distance <= within_km:
+            # Add a distance key:value pair to the location object so that
+            # locations can be sorted by distance after the list is created
+            loc_distance = {"distance": distance}
+            loc.update(loc_distance)
+            stores_to_check.append(loc)
 
 if stores_to_check:
     # Sort the list of locations by distance
@@ -170,7 +193,6 @@ def check_loblaws(store):
             output = f"{count} available at {storeBannerId} at {address} approx {distance} KM away"
             output += "\n"
             output += pickup_times
-
             print(output)
 
 
@@ -182,5 +204,5 @@ def local_time(timestamp):
     return str(local)
 
 
-for tStore in stores_to_check:
-    check_loblaws(tStore)
+for store in stores_to_check:
+    check_loblaws(store)

@@ -3,10 +3,12 @@
 
 ** BREAKING CHANGES **
 
+* add -id option to search by store IDs
+
 * add argparse to enable proper command line switches
 
 ```
-usage: check_all_by_postal_code.py [-h] [-p P] [-lat LAT] [-long LONG] [-d D] [-r]
+usage: check_all_by_postal_code.py [-h] [-p P] [-lat LAT] [-long LONG] [-d D] [-r] [-id ID]
 
 optional arguments:
   -h, --help         show this help message and exit
@@ -15,6 +17,7 @@ optional arguments:
   -long LONG         ex: -79.524619
   -d D, -distance D  Search distance in KM
   -r, -report        report lat + long and stores found within search distance. will not check available pickup times
+  -id ID             comma seperated store IDs ex: 1111,1122
 ```
 * remove MYLAT and MYLONG environment variables
 

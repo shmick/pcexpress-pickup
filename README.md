@@ -2,9 +2,9 @@
 A script to check for available pickup times at PC Express locations
 
 ## Usage
-```bash
-$ python check_all_by_postal_code.py -h
-usage: check_all_by_postal_code.py [-h] [-p P] [-lat LAT] [-long LONG] [-d D] [-r]
+```
+$ python check_all_by_postal_code.py
+usage: check_all_by_postal_code.py [-h] [-p P] [-lat LAT] [-long LONG] [-d D] [-r] [-id ID]
 
 optional arguments:
   -h, --help         show this help message and exit
@@ -13,10 +13,11 @@ optional arguments:
   -long LONG         ex: -79.524619
   -d D, -distance D  Search distance in KM
   -r, -report        report lat + long and stores found within search distance. will not check available pickup times
+  -id ID             comma seperated store IDs ex: 1111,1122
 ```
 
 ### Report a list of stores available within a 10KM radius
-```bash
+```
 $ python check_all_by_postal_code.py -p m5e1w6 -d 10 -r
 -lat 43.703344 -long -79.524619
 superstore, id: 2800, 2549 Weston Rd Toronto, Ontario M9N 2A7, approx 0.9 KM away
@@ -25,7 +26,7 @@ fortinos, id: 0096, 3940 Hwy 7 RR 2 Vaughan, Ontario L4L 9C3, approx 9.8 KM away
 ```
 
 ### Use -lat and -long to avoid doing a postal code lookup each time
-```bash
+```
 $ python check_all_by_postal_code.py -lat 43.703344 -long -79.524619 -d 10 
 9 available at nofrills at 245 Dixon Rd Etobicoke, Ontario M9P 2M4 approx 1.8 KM away
 2020-04-14 09:00:00-04:00
@@ -38,7 +39,14 @@ $ python check_all_by_postal_code.py -lat 43.703344 -long -79.524619 -d 10
 1 available at loblaw at 3671 Dundas St W Toronto, Ontario M6S 2T3 approx 4.8 KM away
 2020-04-23 16:00:00-04:00
 ```
-
+### Use -id to search for pickup times at specific stores. Geo lookup disaabled, so distance will always be 0 KM
+```
+$ python check_all_by_postal_code.py -id 2800,3480,1174
+20 available at loblaw at 270 The Kingsway Etobicoke, Ontario M9A 3T7 approx 0 KM away
+2020-04-14 14:00:00-04:00
+<...>
+2020-04-23 15:00:00-04:00
+```
 ## Installation using a python3 virtual environment - python 3.6 or newer required
 ```bash
 $ git clone https://github.com/shmick/pcexpress-pickup
