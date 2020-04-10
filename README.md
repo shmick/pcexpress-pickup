@@ -53,12 +53,7 @@ $ pip install -r requirements.txt
 $ docker run shmick/pcexpress-pickup -lat 43.703344 -long -79.524619
 8 available at nofrills at 245 Dixon Rd Etobicoke, Ontario M9P 2M4 approx 1.8 KM away
 2020-04-23 12:00:00-04:00
-2020-04-23 13:00:00-04:00
-2020-04-23 14:00:00-04:00
-2020-04-23 15:00:00-04:00
-2020-04-23 16:00:00-04:00
-2020-04-23 17:00:00-04:00
-2020-04-23 18:00:00-04:00
+<...>
 2020-04-23 19:00:00-04:00
 
 1 available at loblaw at 3671 Dundas St W Toronto, Ontario M6S 2T3 approx 4.8 KM away
