@@ -1,6 +1,44 @@
 # pcexpress-pickup
 A script to check for available pickup times at PC Express locations
 
+## Usage
+```bash
+$ python check_all_by_postal_code.py -h
+usage: check_all_by_postal_code.py [-h] [-p P] [-lat LAT] [-long LONG] [-d D] [-r]
+
+optional arguments:
+  -h, --help         show this help message and exit
+  -p P, -postal P    ex: m5w1e6
+  -lat LAT           ex: 43.703344
+  -long LONG         ex: -79.524619
+  -d D, -distance D  Search distance in KM
+  -r, -report        report lat + long and stores found within search distance. will not check available pickup times
+```
+
+### Report a list of stores available within a 10KM radius
+```bash
+$ python check_all_by_postal_code.py -p m5e1w6 -d 10 -r
+-lat 43.703344 -long -79.524619
+superstore, id: 2800, 2549 Weston Rd Toronto, Ontario M9N 2A7, approx 0.9 KM away
+<...>
+fortinos, id: 0096, 3940 Hwy 7 RR 2 Vaughan, Ontario L4L 9C3, approx 9.8 KM away
+```
+
+### Use -lat and -long to avoid doing a postal code lookup each time
+```bash
+$ python check_all_by_postal_code.py -lat 43.703344 -long -79.524619 -d 10 
+9 available at nofrills at 245 Dixon Rd Etobicoke, Ontario M9P 2M4 approx 1.8 KM away
+2020-04-14 09:00:00-04:00
+<...>
+2020-04-23 19:00:00-04:00
+
+1 available at loblaw at 270 The Kingsway Etobicoke, Ontario M9A 3T7 approx 4.7 KM away
+2020-04-23 16:00:00-04:00
+
+1 available at loblaw at 3671 Dundas St W Toronto, Ontario M6S 2T3 approx 4.8 KM away
+2020-04-23 16:00:00-04:00
+```
+
 ## Installation using a python3 virtual environment - python 3.6 or newer required
 ```bash
 $ git clone https://github.com/shmick/pcexpress-pickup
@@ -12,7 +50,19 @@ $ pip install -r requirements.txt
 
 ## Run via Docker
 ```bash
-$ docker run shmick/pcexpress-pickup -p m6h2b4 3
+$ docker run shmick/pcexpress-pickup -lat 43.703344 -long -79.524619
+8 available at nofrills at 245 Dixon Rd Etobicoke, Ontario M9P 2M4 approx 1.8 KM away
+2020-04-23 12:00:00-04:00
+2020-04-23 13:00:00-04:00
+2020-04-23 14:00:00-04:00
+2020-04-23 15:00:00-04:00
+2020-04-23 16:00:00-04:00
+2020-04-23 17:00:00-04:00
+2020-04-23 18:00:00-04:00
+2020-04-23 19:00:00-04:00
+
+1 available at loblaw at 3671 Dundas St W Toronto, Ontario M6S 2T3 approx 4.8 KM away
+2020-04-23 16:00:00-04:00
 ```
 
 ## Build and run your own container
@@ -20,55 +70,8 @@ $ docker run shmick/pcexpress-pickup -p m6h2b4 3
 $ git clone https://github.com/shmick/pcexpress-pickup
 $ cd pcexpress-pickup/
 $ docker build -t pcexpress-pickup:latest .
-$ docker run pcexpress-pickup -p m6h2b4 3
+$ docker run shmick/pcexpress-pickup
 ```
-
-### example output - lookup by Postal Code and (optional) Distance in KM (default 5)
-```
-$ python check_all_by_postal_code.py m5e1w6 3
-12 pickup times available at loblaw at 10 Lower Jarvis St Toronto, Ontario M5E 1Z2 approx 0 KM away
-2020-04-22 08:00:00-04:00
-<...>
-2020-04-22 19:00:00-04:00
-
-15 pickup times available at loblaw at 60 Carlton St Toronto, Ontario M5B 1L1 approx 1 KM away
-2020-04-18 11:00:00-04:00
-<...>
-2020-04-22 19:00:00-04:00
-
-36 pickup times available at loblaw at 585 Queen St W Toronto, ON M5V 2B7 approx 2 KM away
-2020-04-18 18:00:00-04:00
-<...>
-2020-04-20 11:00:00-04:00
-```
-
-### generate a report of the stores that match your postal code and search distance
-```
-$ python check_all_by_postal_code.py m5e1w6 3 report
-store: loblaw, location: 1079, address: 10 Lower Jarvis St Toronto, Ontario M5E 1Z2, approx 0 KM away
-<...>
-store: independentcitymarket, location: 0479, address: 55 Bloor St W Toronto, Ontario M4W 1A5, approx 2 KM away
-```
-
-### example output of older check.py script
-```
-$ python check.py 
-5 pickup times available at rcss at 15900 Bayview Ave Aurora, Ontario L4G 7Y3
-2020-04-14 10:00:00-04:00
-2020-04-14 12:00:00-04:00
-<...>
-
-7 pickup times available at nofrills at 9325 Yonge St Richmond Hill, Ontario L4C 0A8
-2020-04-14 09:00:00-04:00
-2020-04-14 10:00:00-04:00
-<...>
-
-5 pickup times available at nofrills at 14800 Yonge St #162 Aurora, Ontario L4G 1N3
-2020-04-14 09:00:00-04:00
-2020-04-14 11:00:00-04:00
-<...>
-```
-
 
 # Notes
 https://www.pcexpress.ca/bundle.js contains a list of all pcexpress pickup locations as well as plenty of other store and location metadata. 
