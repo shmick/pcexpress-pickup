@@ -1,3 +1,6 @@
+## 2020-04-11
+
+* split into task specific functions
 
 ## 2020-04-10
 
