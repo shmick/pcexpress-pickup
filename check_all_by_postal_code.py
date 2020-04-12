@@ -15,14 +15,6 @@ geo_bak = "https://geogratis.gc.ca/services/geolocation/en/locate?q="
 store_locations = "./locations.json"
 
 
-def check_python_ver(info):
-    if info < MIN_PYTHON:
-        sys.exit("Python %s.%s or later is required.\n" % MIN_PYTHON)
-
-
-check_python_ver(sys.version_info)
-
-
 def parse_args(args):
     parser = argparse.ArgumentParser()
 
@@ -49,27 +41,10 @@ def parse_args(args):
     return args
 
 
-args = parse_args(args)
-
-postal_code = args.p
-myLat = args.lat
-myLong = args.long
-within_km = args.d
-report = args.r
-my_ids = args.id
-verbose = args.verbose
-
-if verbose:
-    print(args)
-
-
 def get_ids(my_ids):
     if my_ids:
         my_ids = my_ids.split(",")
     return my_ids
-
-
-my_ids = get_ids(my_ids)
 
 
 def check_params(postal_code, myLat, myLong):
@@ -85,15 +60,11 @@ def check_params(postal_code, myLat, myLong):
             )
 
 
-if not my_ids:
-    check_params(postal_code, myLat, myLong)
-
-
 def geo_lookup(postal_code):
     geo_url_pri = geo_pri + postal_code
     try:
         geo_data = requests.get(geo_url_pri)
-    except requests.exceptions.RequestException as e:  # This is the correct syntax
+    except requests.exceptions.RequestException as e:
         raise SystemExit(e)
     # geocoder.ca can throttle requests. In this case, use the backup geolocation lookup.
     if geo_data.status_code == 200:
@@ -104,7 +75,7 @@ def geo_lookup(postal_code):
         geo_url_bak = geo_bak + postal_code
         try:
             geo_data = requests.get(geo_url_bak)
-        except requests.exceptions.RequestException as e:  # This is the correct syntax
+        except requests.exceptions.RequestException as e:
             raise SystemExit(e)
         geo_json = geo_data.json()
         coords = geo_json[0]["geometry"]["coordinates"]
@@ -112,12 +83,12 @@ def geo_lookup(postal_code):
         myLong = coords[0]
 
     myLatLong = (myLat, myLong)
-    if verbose:
-        print(f"geo json: {geo_json}")
+    # if verbose:
+    #     print(f"geo json: {geo_json}")
     return myLatLong
 
 
-def get_latlog(postal_code):
+def get_latlog(postal_code, myLat, myLong, report):
     myLatLong = None
     if postal_code:
         if not myLat or not myLong:
@@ -129,7 +100,7 @@ def get_latlog(postal_code):
     return myLatLong
 
 
-def lookup_by_id(my_ids, all_locs):
+def check_stores_by_id(my_ids, all_locs):
     stores_to_check = []
     for ids in my_ids:
         for loc in all_locs["locations"]:
@@ -142,7 +113,7 @@ def lookup_by_id(my_ids, all_locs):
     return stores_to_check
 
 
-def lookup_by_geo(myLatLong, all_locs, within_km):
+def check_stores_by_geo(myLatLong, all_locs, within_km):
     stores_to_check = []
     for loc in all_locs["locations"]:
         locLatLong = (loc["geoPoint"]["latitude"], loc["geoPoint"]["longitude"])
@@ -162,10 +133,11 @@ def stores_to_check(store_locations):
     stores_to_check = []
     # if store IDs are specified, no need to figure out stores based on distance
     if my_ids:
-        stores_to_check = lookup_by_id(my_ids, all_locs)
+        stores_to_check = check_stores_by_id(my_ids, all_locs)
     else:
-        myLatLong = get_latlog(postal_code)
-        stores_to_check = lookup_by_geo(myLatLong, all_locs, within_km)
+        myLatLong = get_latlog(postal_code, myLat, myLong, report)
+        stores_to_check = check_stores_by_geo(myLatLong, all_locs, within_km)
+
     if stores_to_check:
         # Sort the list of locations by distance
         stores_to_check = sorted(stores_to_check, key=lambda s: s["distance"])
@@ -189,10 +161,11 @@ def check_loblaws(store):
         headers = {
             "Site-Banner": storeBannerId
         }  # If this header isn't set, the site returns an error
-        # Using the base_url and headers, build the full URL
         url = base_url + "/api/pickup-locations/" + loc_id + "/time-slots"
-        # Make the HTTP request
-        r = requests.get(url, headers=headers)
+        try:
+            r = requests.get(url, headers=headers)
+        except requests.exceptions.RequestException as e:
+            raise SystemExit(e)
         # Use the builtin JSON decoder
         data = r.json()
         # We only want to process the timeSlots entries from the output
@@ -255,6 +228,30 @@ store_urls = {
     "tntsupermarket": "https://www.tntsupermarket.com",
 }
 
-stores_to_check = stores_to_check(store_locations)
-for store in stores_to_check:
-    check_loblaws(store)
+
+def check_python_ver(info):
+    if info < MIN_PYTHON:
+        sys.exit("Python %s.%s or later is required.\n" % MIN_PYTHON)
+
+
+if __name__ == "__main__":
+    check_python_ver(sys.version_info)
+    args = parse_args(args)
+    postal_code = args.p
+    myLat = args.lat
+    myLong = args.long
+    within_km = args.d
+    report = args.r
+    my_ids = args.id
+    verbose = args.verbose
+
+    if verbose:
+        print(args)
+
+    my_ids = get_ids(my_ids)
+    if not my_ids:
+        check_params(postal_code, myLat, myLong)
+
+    stores_to_check = stores_to_check(store_locations)
+    for store in stores_to_check:
+        check_loblaws(store)
