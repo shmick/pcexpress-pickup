@@ -4,9 +4,11 @@ import json
 import argparse
 import requests
 import haversine
+import datetime as dt
 from datetime import datetime
 from dateutil import tz
 from haversine import haversine, Unit
+
 
 MIN_PYTHON = (3, 6)  # Python 3.6
 args = sys.argv[1:]
@@ -197,7 +199,9 @@ def check_loblaws(store):
 
 # Convert the UTC timestamps to localtime
 from_zone = tz.gettz("UTC")
-to_zone = tz.gettz("America/Toronto")
+# to_zone = tz.gettz("America/Toronto")
+# Rather than hard code the timezone, figure out the local timezone
+to_zone = dt.datetime.now(dt.timezone(dt.timedelta(0))).astimezone().tzinfo
 
 
 def local_time(timestamp):
