@@ -4,7 +4,7 @@ A script to check for available pickup times at PC Express locations
 ## Usage
 ```
 $ python check_all_by_postal_code.py
-usage: check_all_by_postal_code.py [-h] [-p P] [-lat LAT] [-long LONG] [-d D] [-r] [-id ID]
+usage: check_all_by_postal_code.py [-h] [-p P] [-lat LAT] [-long LONG] [-d D] [-r] [-id ID] [-brands BRANDS]
 
 optional arguments:
   -h, --help         show this help message and exit
@@ -14,12 +14,13 @@ optional arguments:
   -d D, -distance D  Search distance in KM
   -r, -report        report lat + long and stores found within search distance. will not check available pickup times
   -id ID             comma seperated store IDs ex: 1111,1122
+  -brands BRANDS     filter by comma seperated store brands ex: loblaw,superstore,zehrs
 ```
 
 ### Report a list of stores available within a 10KM radius
 ```
 $ python check_all_by_postal_code.py -p m5e1w6 -d 10 -r
--lat 43.703344 -long -79.524619
+For faster lookup times use: -lat 43.703344 -long -79.524619
 superstore, id: 2800, 2549 Weston Rd Toronto, Ontario M9N 2A7, approx 0.9 KM away
 <...>
 fortinos, id: 0096, 3940 Hwy 7 RR 2 Vaughan, Ontario L4L 9C3, approx 9.8 KM away

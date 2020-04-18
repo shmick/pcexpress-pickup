@@ -34,6 +34,11 @@ def parse_args(args):
     )
     parser.add_argument("-id", type=str, help="comma seperated store IDs ex: 1111,1122")
     parser.add_argument(
+        "-brands",
+        type=str,
+        help="filter by comma seperated store brands ex: loblaw,superstore,zehrs",
+    )
+    parser.add_argument(
         "--verbose", action="store_true", help=argparse.SUPPRESS,
     )
     args = parser.parse_args(args)
@@ -43,10 +48,11 @@ def parse_args(args):
     return args
 
 
-def get_ids(my_ids):
-    if my_ids:
-        my_ids = my_ids.split(",")
-    return my_ids
+def string_to_list(csv_string):
+    stringlist = []
+    if csv_string:
+        stringlist = csv_string.split(",")
+    return stringlist
 
 
 def check_params(postal_code, myLat, myLong):
@@ -83,10 +89,7 @@ def geo_lookup(postal_code):
         coords = geo_json[0]["geometry"]["coordinates"]
         myLat = coords[1]
         myLong = coords[0]
-
     myLatLong = (myLat, myLong)
-    # if verbose:
-    #     print(f"geo json: {geo_json}")
     return myLatLong
 
 
@@ -98,7 +101,7 @@ def get_latlog(postal_code, myLat, myLong, report):
     if myLat and myLong:
         myLatLong = (myLat, myLong)
     if report and not my_ids:
-        print(f"-lat {myLatLong[0]} -long {myLatLong[1]}")
+        print(f"For faster lookup times use: -lat {myLatLong[0]} -long {myLatLong[1]}")
     return myLatLong
 
 
@@ -115,8 +118,9 @@ def check_stores_by_id(my_ids, all_locs):
     return stores_to_check
 
 
-def check_stores_by_geo(myLatLong, all_locs, within_km):
+def check_stores_by_geo(filter_brands, myLatLong, all_locs, within_km):
     stores_to_check = []
+    stores_to_check_filtered_by_brand = []
     for loc in all_locs["locations"]:
         locLatLong = (loc["geoPoint"]["latitude"], loc["geoPoint"]["longitude"])
         distance = haversine(myLatLong, locLatLong)
@@ -126,7 +130,18 @@ def check_stores_by_geo(myLatLong, all_locs, within_km):
             loc_distance = {"distance": distance}
             loc.update(loc_distance)
             stores_to_check.append(loc)
-    return stores_to_check
+    if stores_to_check:
+        if filter_brands:
+            for brand in filter_brands:
+                for store in stores_to_check:
+                    storeBannerId = store["storeBannerId"]
+                    if brand == storeBannerId:
+                        stores_to_check_filtered_by_brand.append(store)
+    #
+    if stores_to_check_filtered_by_brand:
+        return stores_to_check_filtered_by_brand
+    else:
+        return stores_to_check
 
 
 def stores_to_check(store_locations):
@@ -138,7 +153,9 @@ def stores_to_check(store_locations):
         stores_to_check = check_stores_by_id(my_ids, all_locs)
     else:
         myLatLong = get_latlog(postal_code, myLat, myLong, report)
-        stores_to_check = check_stores_by_geo(myLatLong, all_locs, within_km)
+        stores_to_check = check_stores_by_geo(
+            filter_brands, myLatLong, all_locs, within_km
+        )
 
     if stores_to_check:
         # Sort the list of locations by distance
@@ -247,14 +264,17 @@ if __name__ == "__main__":
     within_km = args.d
     report = args.r
     my_ids = args.id
+    filter_brands = args.brands
     verbose = args.verbose
 
     if verbose:
         print(args)
 
-    my_ids = get_ids(my_ids)
+    my_ids = string_to_list(my_ids)
     if not my_ids:
         check_params(postal_code, myLat, myLong)
+
+    filter_brands = string_to_list(filter_brands)
 
     stores_to_check = stores_to_check(store_locations)
     for store in stores_to_check:

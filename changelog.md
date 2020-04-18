@@ -1,3 +1,25 @@
+## 2020-04-18
+
+* implement generic cvs string to list function 
+
+* use timezone of system running the script instead of fixed to America/Toronto
+
+* add -brands option to filter result by store brand (superstore,loblaw,...)
+
+```
+usage: check_all_by_postal_code.py [-h] [-p P] [-lat LAT] [-long LONG] [-d D] [-r] [-id ID] [-brands BRANDS]
+
+optional arguments:
+  -h, --help         show this help message and exit
+  -p P, -postal P    ex: m5w1e6
+  -lat LAT           ex: 43.703344
+  -long LONG         ex: -79.524619
+  -d D, -distance D  Search distance in KM
+  -r, -report        report lat + long and stores found within search distance. will not check available pickup times
+  -id ID             comma seperated store IDs ex: 1111,1122
+  -brands BRANDS     filter by comma seperated store brands ex: loblaw,superstore,zehrs
+```
+
 ## 2020-04-11
 
 * split into task specific functions
