@@ -135,15 +135,13 @@ def check_stores_by_geo(filter_brands, myLatLong, all_locs, within_km):
             loc_distance = {"distance": distance}
             loc.update(loc_distance)
             stores_to_check.append(loc)
-    if stores_to_check:
-        if filter_brands:
+    if filter_brands:
+        if stores_to_check:
             for brand in filter_brands:
                 for store in stores_to_check:
                     storeBannerId = store["storeBannerId"]
                     if brand == storeBannerId:
                         stores_to_check_filtered_by_brand.append(store)
-    #
-    if stores_to_check_filtered_by_brand:
         return stores_to_check_filtered_by_brand
     else:
         return stores_to_check
@@ -158,14 +156,14 @@ def stores_to_check(store_locations, filter_brands, my_ids):
 
     filter_brands = string_to_list(filter_brands)
     my_ids = string_to_list(my_ids)
-    if not my_ids:
-        check_params(postal_code, myLat, myLong)
 
     stores_to_check = []
+
     # if store IDs are specified, no need to figure out stores based on distance
     if my_ids:
         stores_to_check = check_stores_by_id(my_ids, all_locs)
     else:
+        check_params(postal_code, myLat, myLong)
         myLatLong = get_latlog(postal_code, myLat, myLong, report)
         stores_to_check = check_stores_by_geo(
             filter_brands, myLatLong, all_locs, within_km

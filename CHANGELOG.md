@@ -6,6 +6,8 @@
 
 * cleanup __main__ entry 
 
+* fix filter by brands logic. If the brand wasn't in the results, it would show the full results.
+
 ## 2020-04-18
 
 * implement generic cvs string to list function 
