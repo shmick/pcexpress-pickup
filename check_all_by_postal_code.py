@@ -1,3 +1,4 @@
+from __future__ import with_statement
 import os
 import sys
 import json
@@ -49,10 +50,14 @@ def parse_args(args):
 
 
 def string_to_list(csv_string):
+    deduped = []
     stringlist = []
     if csv_string:
         stringlist = csv_string.split(",")
-    return stringlist
+    for entry in stringlist:
+        if entry not in deduped:
+            deduped.append(entry)
+    return deduped
 
 
 def check_params(postal_code, myLat, myLong):
@@ -144,9 +149,18 @@ def check_stores_by_geo(filter_brands, myLatLong, all_locs, within_km):
         return stores_to_check
 
 
-def stores_to_check(store_locations):
-    with open(store_locations) as inf:
-        all_locs = json.load(inf)
+def stores_to_check(store_locations, filter_brands, my_ids):
+    try:
+        with open(store_locations) as inf:
+            all_locs = json.load(inf)
+    except EnvironmentError as e:  # parent of IOError, OSError *and* WindowsError where available
+        sys.exit(e)
+
+    filter_brands = string_to_list(filter_brands)
+    my_ids = string_to_list(my_ids)
+    if not my_ids:
+        check_params(postal_code, myLat, myLong)
+
     stores_to_check = []
     # if store IDs are specified, no need to figure out stores based on distance
     if my_ids:
@@ -169,8 +183,12 @@ def check_loblaws(store):
     storeBannerId = store["storeBannerId"]
     distance = round(store["distance"], 1)
 
+    output_data = []
+
     if report:
-        print(f"{storeBannerId}, id: {loc_id}, {address}, approx {distance} KM away")
+        output_data.append(
+            f"{storeBannerId}, id: {loc_id}, {address}, approx {distance} KM away"
+        )
     else:
         if verbose:
             print(
@@ -192,26 +210,24 @@ def check_loblaws(store):
             timeslots = data["timeSlots"]
         except:
             return
-
-        # Initialze an empty string to store the pickup_times
-        pickup_times = ""
-
         # Loop through the results
         for startTime in timeslots:
             # Get a list of pickup times where the "available" value is not False
             if not startTime.get("available") is False:
                 # Convert the UTC times to local time
-                start_time = local_time(startTime["startTime"])
+                startTime = local_time(startTime["startTime"])
                 # Append the converted start_time to the results
-                pickup_times += start_time
-                pickup_times += "\n"
-
-        if pickup_times:
-            count = pickup_times.count("\n")
-            output = f"{count} available at {storeBannerId} at {address} approx {distance} KM away"
-            output += "\n"
-            output += pickup_times
-            print(output)
+                output_data.append(startTime)
+        if output_data:
+            count = len(output_data)
+            # Insert the count and store info at the beginning of the list
+            output_data.insert(
+                0,
+                f"{count} available at {storeBannerId} at {address} approx {distance} KM away",
+            )
+            # Add an empty entry to the list to create an empty line between each store output
+            output_data.append("")
+    return output_data
 
 
 # Convert the UTC timestamps to localtime
@@ -270,12 +286,11 @@ if __name__ == "__main__":
     if verbose:
         print(args)
 
-    my_ids = string_to_list(my_ids)
-    if not my_ids:
-        check_params(postal_code, myLat, myLong)
-
-    filter_brands = string_to_list(filter_brands)
-
-    stores_to_check = stores_to_check(store_locations)
-    for store in stores_to_check:
-        check_loblaws(store)
+    # build the list of store locations to check
+    stores_to_check = stores_to_check(store_locations, filter_brands, my_ids)
+    if stores_to_check:
+        for store in stores_to_check:
+            result = check_loblaws(store)
+            if result:
+                for entries in result:
+                    print(entries)

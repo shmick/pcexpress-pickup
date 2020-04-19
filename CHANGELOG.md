@@ -1,3 +1,11 @@
+## 2020-04-19
+
+* dedupe list of store IDs and brands 
+
+* alter internals to use lists for storing found timeslots 
+
+* cleanup __main__ entry 
+
 ## 2020-04-18
 
 * implement generic cvs string to list function 
