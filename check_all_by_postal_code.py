@@ -112,14 +112,13 @@ def get_latlog(postal_code, myLat, myLong, report):
 
 def check_stores_by_id(my_ids, all_locs):
     stores_to_check = []
-    for ids in my_ids:
-        for loc in all_locs["locations"]:
-            store_id = loc["id"]
-            if ids == store_id:
-                # when using -id the distance to the store will be 0
-                loc_distance = {"distance": 0}
-                loc.update(loc_distance)
-                stores_to_check.append(loc)
+    for loc in all_locs["locations"]:
+        store_id = loc["id"]
+        if store_id in my_ids:
+            # when using -id the distance to the store will be 0
+            loc_distance = {"distance": 0}
+            loc.update(loc_distance)
+            stores_to_check.append(loc)
     return stores_to_check
 
 
@@ -137,11 +136,10 @@ def check_stores_by_geo(filter_brands, myLatLong, all_locs, within_km):
             stores_to_check.append(loc)
     if filter_brands:
         if stores_to_check:
-            for brand in filter_brands:
-                for store in stores_to_check:
-                    storeBannerId = store["storeBannerId"]
-                    if brand == storeBannerId:
-                        stores_to_check_filtered_by_brand.append(store)
+            for store in stores_to_check:
+                storeBannerId = store["storeBannerId"]
+                if storeBannerId in filter_brands:
+                    stores_to_check_filtered_by_brand.append(store)
         return stores_to_check_filtered_by_brand
     else:
         return stores_to_check

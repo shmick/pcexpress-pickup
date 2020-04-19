@@ -1,5 +1,7 @@
 ## 2020-04-19
 
+* remove unnecessary for loop when checking store IDs and brands
+
 * dedupe list of store IDs and brands 
 
 * alter internals to use lists for storing found timeslots 
